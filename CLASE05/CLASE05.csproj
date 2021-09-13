@@ -135,6 +135,30 @@
     <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Lotes\Frm_ABM_Lotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_ABM_Lotes.Designer.cs">
+      <DependentUpon>Frm_ABM_Lotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Alta_Lote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Alta_Lote.Designer.cs">
+      <DependentUpon>Frm_Alta_Lote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Baja_Lote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Baja_Lote.Designer.cs">
+      <DependentUpon>Frm_Baja_Lote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Consulta_Lote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Consulta_Lote.Designer.cs">
+      <DependentUpon>Frm_Consulta_Lote.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +224,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Lotes\Frm_ABM_Lotes.resx">
+      <DependentUpon>Frm_ABM_Lotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Lotes\Frm_Alta_Lote.resx">
+      <DependentUpon>Frm_Alta_Lote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Lotes\Frm_Baja_Lote.resx">
+      <DependentUpon>Frm_Baja_Lote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Lotes\Frm_Consulta_Lote.resx">
+      <DependentUpon>Frm_Consulta_Lote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>

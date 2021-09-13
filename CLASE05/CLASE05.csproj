@@ -105,6 +105,30 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Empleado\Frm_ABM_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_ABM_Empleado.Designer.cs">
+      <DependentUpon>Frm_ABM_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Alta_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Alta_Empleado.Designer.cs">
+      <DependentUpon>Frm_Alta_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Baja_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Baja_Empleado.Designer.cs">
+      <DependentUpon>Frm_Baja_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Modicar_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Modicar_Empleado.Designer.cs">
+      <DependentUpon>Frm_Modicar_Empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +140,12 @@
     </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase_ABM_Entrada.Designer.cs">
       <DependentUpon>FrmBase_ABM_Entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Consultar_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Consultar_Empleado.Designer.cs">
+      <DependentUpon>Frm_Consultar_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\InicioSistema\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -134,6 +164,36 @@
     </Compile>
     <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.Designer.cs">
+      <DependentUpon>frm_ABM_tipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.Designer.cs">
+      <DependentUpon>Frm_Alta_tipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.Designer.cs">
+      <DependentUpon>Frm_Baja_tipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.Designer.cs">
+      <DependentUpon>Frm_Consulta_tipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.Designer.cs">
+      <DependentUpon>Frm_Modificar_tipoDocumento.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
@@ -186,6 +246,21 @@
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_ABM_Empleado.resx">
+      <DependentUpon>Frm_ABM_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Alta_Empleado.resx">
+      <DependentUpon>Frm_Alta_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Baja_Empleado.resx">
+      <DependentUpon>Frm_Baja_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Consultar_Empleado.resx">
+      <DependentUpon>Frm_Consultar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Modicar_Empleado.resx">
+      <DependentUpon>Frm_Modicar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +275,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.resx">
+      <DependentUpon>frm_ABM_tipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.resx">
+      <DependentUpon>Frm_Alta_tipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.resx">
+      <DependentUpon>Frm_Baja_tipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.resx">
+      <DependentUpon>Frm_Consulta_tipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.resx">
+      <DependentUpon>Frm_Modificar_tipoDocumento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
@@ -288,5 +378,6 @@
   <ItemGroup>
     <None Include="Resources\btn_consultar %283%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

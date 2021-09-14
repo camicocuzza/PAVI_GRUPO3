@@ -31,7 +31,7 @@ namespace CLASE05.Formularios.Proveedor
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-            Frm_Alta_Rubro frm_alta = new Frm_Alta_Rubro();
+            Frm_Modificar_Proveedor frm_alta = new Frm_Modificar_Proveedor();
             frm_alta.ShowDialog();
         }
 

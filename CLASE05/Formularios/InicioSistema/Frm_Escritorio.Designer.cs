@@ -36,10 +36,14 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.articuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficosEstadísticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoProvinciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +107,11 @@
             // aBMToolStripMenuItem
             // 
             this.aBMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuariosToolStripMenuItem});
+            this.usuariosToolStripMenuItem,
+            this.articuloToolStripMenuItem,
+            this.proveedorToolStripMenuItem,
+            this.loteToolStripMenuItem,
+            this.estadoProvinciaToolStripMenuItem});
             this.aBMToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.aBMToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
             this.aBMToolStripMenuItem.Name = "aBMToolStripMenuItem";
@@ -113,9 +121,16 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // articuloToolStripMenuItem
+            // 
+            this.articuloToolStripMenuItem.Name = "articuloToolStripMenuItem";
+            this.articuloToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.articuloToolStripMenuItem.Text = "Articulo";
+            this.articuloToolStripMenuItem.Click += new System.EventHandler(this.articuloToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -148,6 +163,27 @@
             this.aToolStripMenuItem2.Name = "aToolStripMenuItem2";
             this.aToolStripMenuItem2.Size = new System.Drawing.Size(86, 24);
             this.aToolStripMenuItem2.Text = "a";
+            // 
+            // proveedorToolStripMenuItem
+            // 
+            this.proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
+            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.proveedorToolStripMenuItem.Text = "Proveedor";
+            this.proveedorToolStripMenuItem.Click += new System.EventHandler(this.proveedorToolStripMenuItem_Click);
+            // 
+            // loteToolStripMenuItem
+            // 
+            this.loteToolStripMenuItem.Name = "loteToolStripMenuItem";
+            this.loteToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.loteToolStripMenuItem.Text = "Lote";
+            this.loteToolStripMenuItem.Click += new System.EventHandler(this.loteToolStripMenuItem_Click);
+            // 
+            // estadoProvinciaToolStripMenuItem
+            // 
+            this.estadoProvinciaToolStripMenuItem.Name = "estadoProvinciaToolStripMenuItem";
+            this.estadoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.estadoProvinciaToolStripMenuItem.Text = "Estado Provincia";
+            this.estadoProvinciaToolStripMenuItem.Click += new System.EventHandler(this.estadoProvinciaToolStripMenuItem_Click);
             // 
             // Frm_Escritorio
             // 
@@ -187,6 +223,10 @@
         private System.Windows.Forms.ToolStripMenuItem salirDeSistemaConLoginActivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem articuloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proveedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadoProvinciaToolStripMenuItem;
     }
 }
 

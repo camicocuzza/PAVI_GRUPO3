@@ -10,6 +10,11 @@ using System.Windows.Forms;
 using CLASE05.Negocios;
 using CLASE05.Formularios.Usuarios;
 using CLASE05.Formularios.FrmBASE;
+using CLASE05.Formularios.Articulo;
+using CLASE05.Formularios.Proveedor;
+using CLASE05.Formularios.Lotes;
+using CLASE05.Formularios.EstadoProvincia;
+
 
 namespace CLASE05.Formularios.InicioSistema
 {
@@ -65,6 +70,30 @@ namespace CLASE05.Formularios.InicioSistema
         {
             Frm_ABM_Usuario_Entrada frm_usuario = new Frm_ABM_Usuario_Entrada();
             frm_usuario.ShowDialog();
+        }
+
+        private void articuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Articulo frm_articulo = new Frm_ABM_Articulo();
+            frm_articulo.ShowDialog();
+        }
+
+        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Proveedor frm_proveedor = new Frm_ABM_Proveedor();
+            frm_proveedor.ShowDialog();
+        }
+
+        private void loteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Lotes frm_lotes = new Frm_ABM_Lotes();
+            frm_lotes.ShowDialog();
+        }
+
+        private void estadoProvinciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_EstadoProvincia frm_estadoProvincia = new Frm_ABM_EstadoProvincia();
+            frm_estadoProvincia.ShowDialog();
         }
     }
 }

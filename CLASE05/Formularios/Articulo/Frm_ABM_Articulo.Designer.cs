@@ -29,51 +29,51 @@ namespace CLASE05.Formularios.Articulo
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.rb_id_pais_origen_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_id_rubro_articulo = new System.Windows.Forms.RadioButton();
+            this.lbl_pat_bus_articulo = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
-            this.rb_id_usuario = new System.Windows.Forms.RadioButton();
-            this.rb_n_usuario = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rb_nombre_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_plazo_pago_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_costo_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_num_serie_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_num_lote_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_codigo_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_tiempo_envio_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_id_provedor_articulo = new System.Windows.Forms.RadioButton();
+            this.grid_articulo = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_articulo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton8);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.rb_tiempo_envio_articulo);
+            this.groupBox1.Controls.Add(this.rb_id_provedor_articulo);
+            this.groupBox1.Controls.Add(this.rb_costo_articulo);
+            this.groupBox1.Controls.Add(this.rb_num_serie_articulo);
+            this.groupBox1.Controls.Add(this.rb_num_lote_articulo);
+            this.groupBox1.Controls.Add(this.rb_codigo_articulo);
+            this.groupBox1.Controls.Add(this.rb_id_pais_origen_articulo);
+            this.groupBox1.Controls.Add(this.rb_id_rubro_articulo);
+            this.groupBox1.Controls.Add(this.lbl_pat_bus_articulo);
             this.groupBox1.Controls.Add(this.txt_patron);
-            this.groupBox1.Controls.Add(this.rb_id_usuario);
-            this.groupBox1.Controls.Add(this.rb_n_usuario);
+            this.groupBox1.Controls.Add(this.rb_nombre_articulo);
+            this.groupBox1.Controls.Add(this.rb_plazo_pago_articulo);
             this.groupBox1.Size = new System.Drawing.Size(645, 215);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_n_usuario, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_id_usuario, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_plazo_pago_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_nombre_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_patron, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton6, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton5, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton8, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton7, 0);
+            this.groupBox1.Controls.SetChildIndex(this.lbl_pat_bus_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_rubro_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_pais_origen_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_codigo_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_num_lote_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_num_serie_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_costo_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_provedor_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_tiempo_envio_articulo, 0);
             // 
             // btn_buscar
             // 
@@ -136,39 +136,39 @@ namespace CLASE05.Formularios.Articulo
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Location = new System.Drawing.Point(602, 1);
             // 
-            // radioButton2
+            // rb_id_pais_origen_articulo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(477, 110);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(115, 21);
-            this.radioButton2.TabIndex = 29;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "id_pais_origen";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_id_pais_origen_articulo.AutoSize = true;
+            this.rb_id_pais_origen_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_pais_origen_articulo.Location = new System.Drawing.Point(477, 110);
+            this.rb_id_pais_origen_articulo.Name = "rb_id_pais_origen_articulo";
+            this.rb_id_pais_origen_articulo.Size = new System.Drawing.Size(115, 21);
+            this.rb_id_pais_origen_articulo.TabIndex = 29;
+            this.rb_id_pais_origen_articulo.TabStop = true;
+            this.rb_id_pais_origen_articulo.Text = "id_pais_origen";
+            this.rb_id_pais_origen_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rb_id_rubro_articulo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(477, 83);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 21);
-            this.radioButton1.TabIndex = 28;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "id_rubro";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_id_rubro_articulo.AutoSize = true;
+            this.rb_id_rubro_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_rubro_articulo.Location = new System.Drawing.Point(477, 83);
+            this.rb_id_rubro_articulo.Name = "rb_id_rubro_articulo";
+            this.rb_id_rubro_articulo.Size = new System.Drawing.Size(78, 21);
+            this.rb_id_rubro_articulo.TabIndex = 28;
+            this.rb_id_rubro_articulo.TabStop = true;
+            this.rb_id_rubro_articulo.Text = "id_rubro";
+            this.rb_id_rubro_articulo.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lbl_pat_bus_articulo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 17);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Patrón de Búsqueda";
+            this.lbl_pat_bus_articulo.AutoSize = true;
+            this.lbl_pat_bus_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pat_bus_articulo.Location = new System.Drawing.Point(18, 41);
+            this.lbl_pat_bus_articulo.Name = "lbl_pat_bus_articulo";
+            this.lbl_pat_bus_articulo.Size = new System.Drawing.Size(130, 17);
+            this.lbl_pat_bus_articulo.TabIndex = 27;
+            this.lbl_pat_bus_articulo.Text = "Patrón de Búsqueda";
             // 
             // txt_patron
             // 
@@ -182,109 +182,109 @@ namespace CLASE05.Formularios.Articulo
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 26;
             // 
-            // rb_id_usuario
+            // rb_nombre_articulo
             // 
-            this.rb_id_usuario.AutoSize = true;
-            this.rb_id_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_usuario.Location = new System.Drawing.Point(477, 56);
-            this.rb_id_usuario.Name = "rb_id_usuario";
-            this.rb_id_usuario.Size = new System.Drawing.Size(74, 21);
-            this.rb_id_usuario.TabIndex = 25;
-            this.rb_id_usuario.TabStop = true;
-            this.rb_id_usuario.Text = "nombre";
-            this.rb_id_usuario.UseVisualStyleBackColor = true;
+            this.rb_nombre_articulo.AutoSize = true;
+            this.rb_nombre_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_nombre_articulo.Location = new System.Drawing.Point(477, 56);
+            this.rb_nombre_articulo.Name = "rb_nombre_articulo";
+            this.rb_nombre_articulo.Size = new System.Drawing.Size(74, 21);
+            this.rb_nombre_articulo.TabIndex = 25;
+            this.rb_nombre_articulo.TabStop = true;
+            this.rb_nombre_articulo.Text = "nombre";
+            this.rb_nombre_articulo.UseVisualStyleBackColor = true;
             // 
-            // rb_n_usuario
+            // rb_plazo_pago_articulo
             // 
-            this.rb_n_usuario.AutoSize = true;
-            this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_usuario.Location = new System.Drawing.Point(477, 29);
-            this.rb_n_usuario.Name = "rb_n_usuario";
-            this.rb_n_usuario.Size = new System.Drawing.Size(96, 21);
-            this.rb_n_usuario.TabIndex = 24;
-            this.rb_n_usuario.TabStop = true;
-            this.rb_n_usuario.Text = "plazo_pago";
-            this.rb_n_usuario.UseVisualStyleBackColor = true;
+            this.rb_plazo_pago_articulo.AutoSize = true;
+            this.rb_plazo_pago_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_plazo_pago_articulo.Location = new System.Drawing.Point(477, 29);
+            this.rb_plazo_pago_articulo.Name = "rb_plazo_pago_articulo";
+            this.rb_plazo_pago_articulo.Size = new System.Drawing.Size(96, 21);
+            this.rb_plazo_pago_articulo.TabIndex = 24;
+            this.rb_plazo_pago_articulo.TabStop = true;
+            this.rb_plazo_pago_articulo.Text = "plazo_pago";
+            this.rb_plazo_pago_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_costo_articulo
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.Location = new System.Drawing.Point(300, 110);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(60, 21);
-            this.radioButton3.TabIndex = 33;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "costo";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_costo_articulo.AutoSize = true;
+            this.rb_costo_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_costo_articulo.Location = new System.Drawing.Point(300, 110);
+            this.rb_costo_articulo.Name = "rb_costo_articulo";
+            this.rb_costo_articulo.Size = new System.Drawing.Size(60, 21);
+            this.rb_costo_articulo.TabIndex = 33;
+            this.rb_costo_articulo.TabStop = true;
+            this.rb_costo_articulo.Text = "costo";
+            this.rb_costo_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_num_serie_articulo
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton4.Location = new System.Drawing.Point(300, 83);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 21);
-            this.radioButton4.TabIndex = 32;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "numSerie";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_num_serie_articulo.AutoSize = true;
+            this.rb_num_serie_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_num_serie_articulo.Location = new System.Drawing.Point(300, 83);
+            this.rb_num_serie_articulo.Name = "rb_num_serie_articulo";
+            this.rb_num_serie_articulo.Size = new System.Drawing.Size(85, 21);
+            this.rb_num_serie_articulo.TabIndex = 32;
+            this.rb_num_serie_articulo.TabStop = true;
+            this.rb_num_serie_articulo.Text = "numSerie";
+            this.rb_num_serie_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_num_lote_articulo
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton5.Location = new System.Drawing.Point(300, 56);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(81, 21);
-            this.radioButton5.TabIndex = 31;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "numLote";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_num_lote_articulo.AutoSize = true;
+            this.rb_num_lote_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_num_lote_articulo.Location = new System.Drawing.Point(300, 56);
+            this.rb_num_lote_articulo.Name = "rb_num_lote_articulo";
+            this.rb_num_lote_articulo.Size = new System.Drawing.Size(81, 21);
+            this.rb_num_lote_articulo.TabIndex = 31;
+            this.rb_num_lote_articulo.TabStop = true;
+            this.rb_num_lote_articulo.Text = "numLote";
+            this.rb_num_lote_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rb_codigo_articulo
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton6.Location = new System.Drawing.Point(300, 29);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(69, 21);
-            this.radioButton6.TabIndex = 30;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "codigo";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb_codigo_articulo.AutoSize = true;
+            this.rb_codigo_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_codigo_articulo.Location = new System.Drawing.Point(300, 29);
+            this.rb_codigo_articulo.Name = "rb_codigo_articulo";
+            this.rb_codigo_articulo.Size = new System.Drawing.Size(69, 21);
+            this.rb_codigo_articulo.TabIndex = 30;
+            this.rb_codigo_articulo.TabStop = true;
+            this.rb_codigo_articulo.Text = "codigo";
+            this.rb_codigo_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rb_tiempo_envio_articulo
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton7.Location = new System.Drawing.Point(300, 137);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(110, 21);
-            this.radioButton7.TabIndex = 35;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "tiempo_envio";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rb_tiempo_envio_articulo.AutoSize = true;
+            this.rb_tiempo_envio_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_tiempo_envio_articulo.Location = new System.Drawing.Point(300, 137);
+            this.rb_tiempo_envio_articulo.Name = "rb_tiempo_envio_articulo";
+            this.rb_tiempo_envio_articulo.Size = new System.Drawing.Size(110, 21);
+            this.rb_tiempo_envio_articulo.TabIndex = 35;
+            this.rb_tiempo_envio_articulo.TabStop = true;
+            this.rb_tiempo_envio_articulo.Text = "tiempo_envio";
+            this.rb_tiempo_envio_articulo.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rb_id_provedor_articulo
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton8.Location = new System.Drawing.Point(477, 137);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(107, 21);
-            this.radioButton8.TabIndex = 34;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "id_proveedor";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rb_id_provedor_articulo.AutoSize = true;
+            this.rb_id_provedor_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_provedor_articulo.Location = new System.Drawing.Point(477, 137);
+            this.rb_id_provedor_articulo.Name = "rb_id_provedor_articulo";
+            this.rb_id_provedor_articulo.Size = new System.Drawing.Size(107, 21);
+            this.rb_id_provedor_articulo.TabIndex = 34;
+            this.rb_id_provedor_articulo.TabStop = true;
+            this.rb_id_provedor_articulo.Text = "id_proveedor";
+            this.rb_id_provedor_articulo.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // grid_articulo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 302);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 181);
-            this.dataGridView1.TabIndex = 7;
+            this.grid_articulo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_articulo.Location = new System.Drawing.Point(10, 302);
+            this.grid_articulo.Name = "grid_articulo";
+            this.grid_articulo.Size = new System.Drawing.Size(647, 181);
+            this.grid_articulo.TabIndex = 7;
             // 
             // Frm_ABM_Articulo
             // 
@@ -293,7 +293,7 @@ namespace CLASE05.Formularios.Articulo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 576);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_articulo);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_Articulo";
             this.Text = "Frm_ABM_Articulo";
@@ -308,10 +308,10 @@ namespace CLASE05.Formularios.Articulo
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.grid_articulo, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_articulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,18 +319,18 @@ namespace CLASE05.Formularios.Articulo
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton rb_id_pais_origen_articulo;
+        private System.Windows.Forms.RadioButton rb_id_rubro_articulo;
+        private System.Windows.Forms.Label lbl_pat_bus_articulo;
         private System.Windows.Forms.MaskedTextBox txt_patron;
-        private System.Windows.Forms.RadioButton rb_id_usuario;
-        private System.Windows.Forms.RadioButton rb_n_usuario;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton rb_nombre_articulo;
+        private System.Windows.Forms.RadioButton rb_plazo_pago_articulo;
+        private System.Windows.Forms.RadioButton rb_tiempo_envio_articulo;
+        private System.Windows.Forms.RadioButton rb_id_provedor_articulo;
+        private System.Windows.Forms.RadioButton rb_costo_articulo;
+        private System.Windows.Forms.RadioButton rb_num_serie_articulo;
+        private System.Windows.Forms.RadioButton rb_num_lote_articulo;
+        private System.Windows.Forms.RadioButton rb_codigo_articulo;
+        private System.Windows.Forms.DataGridView grid_articulo;
     }
 }

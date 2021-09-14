@@ -29,33 +29,33 @@ namespace CLASE05.Formularios.Lotes
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rb_n_usuario = new System.Windows.Forms.RadioButton();
-            this.rb_id_usuario = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.grid_consulta = new System.Windows.Forms.DataGridView();
+            this.rb_numero_lote = new System.Windows.Forms.RadioButton();
+            this.rb_nro_remito_proveedor = new System.Windows.Forms.RadioButton();
+            this.lbl_patron_busqueda = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rb_nombre = new System.Windows.Forms.RadioButton();
+            this.rb_fecha_compra = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.rb_fecha_compra);
+            this.groupBox1.Controls.Add(this.rb_nombre);
+            this.groupBox1.Controls.Add(this.lbl_patron_busqueda);
             this.groupBox1.Controls.Add(this.txt_patron);
-            this.groupBox1.Controls.Add(this.rb_id_usuario);
-            this.groupBox1.Controls.Add(this.rb_n_usuario);
+            this.groupBox1.Controls.Add(this.rb_nro_remito_proveedor);
+            this.groupBox1.Controls.Add(this.rb_numero_lote);
             this.groupBox1.Size = new System.Drawing.Size(645, 130);
-            this.groupBox1.Controls.SetChildIndex(this.rb_n_usuario, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_id_usuario, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_numero_lote, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_nro_remito_proveedor, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_patron, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label2, 0);
+            this.groupBox1.Controls.SetChildIndex(this.lbl_patron_busqueda, 0);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton2, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_nombre, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_fecha_compra, 0);
             // 
             // btn_buscar
             // 
@@ -118,47 +118,47 @@ namespace CLASE05.Formularios.Lotes
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Location = new System.Drawing.Point(614, 1);
             // 
-            // dataGridView1
+            // grid_consulta
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 217);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 181);
-            this.dataGridView1.TabIndex = 6;
+            this.grid_consulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_consulta.Location = new System.Drawing.Point(10, 217);
+            this.grid_consulta.Name = "grid_consulta";
+            this.grid_consulta.Size = new System.Drawing.Size(647, 181);
+            this.grid_consulta.TabIndex = 6;
             // 
-            // rb_n_usuario
+            // rb_numero_lote
             // 
-            this.rb_n_usuario.AutoSize = true;
-            this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_usuario.Location = new System.Drawing.Point(301, 18);
-            this.rb_n_usuario.Name = "rb_n_usuario";
-            this.rb_n_usuario.Size = new System.Drawing.Size(77, 21);
-            this.rb_n_usuario.TabIndex = 13;
-            this.rb_n_usuario.TabStop = true;
-            this.rb_n_usuario.Text = "Nombre";
-            this.rb_n_usuario.UseVisualStyleBackColor = true;
+            this.rb_numero_lote.AutoSize = true;
+            this.rb_numero_lote.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_numero_lote.Location = new System.Drawing.Point(301, 18);
+            this.rb_numero_lote.Name = "rb_numero_lote";
+            this.rb_numero_lote.Size = new System.Drawing.Size(122, 21);
+            this.rb_numero_lote.TabIndex = 13;
+            this.rb_numero_lote.TabStop = true;
+            this.rb_numero_lote.Text = "numero de Lote";
+            this.rb_numero_lote.UseVisualStyleBackColor = true;
             // 
-            // rb_id_usuario
+            // rb_nro_remito_proveedor
             // 
-            this.rb_id_usuario.AutoSize = true;
-            this.rb_id_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_usuario.Location = new System.Drawing.Point(301, 45);
-            this.rb_id_usuario.Name = "rb_id_usuario";
-            this.rb_id_usuario.Size = new System.Drawing.Size(163, 21);
-            this.rb_id_usuario.TabIndex = 18;
-            this.rb_id_usuario.TabStop = true;
-            this.rb_id_usuario.Text = "nro_remito_proveedor";
-            this.rb_id_usuario.UseVisualStyleBackColor = true;
+            this.rb_nro_remito_proveedor.AutoSize = true;
+            this.rb_nro_remito_proveedor.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_nro_remito_proveedor.Location = new System.Drawing.Point(301, 45);
+            this.rb_nro_remito_proveedor.Name = "rb_nro_remito_proveedor";
+            this.rb_nro_remito_proveedor.Size = new System.Drawing.Size(163, 21);
+            this.rb_nro_remito_proveedor.TabIndex = 18;
+            this.rb_nro_remito_proveedor.TabStop = true;
+            this.rb_nro_remito_proveedor.Text = "nro_remito_proveedor";
+            this.rb_nro_remito_proveedor.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lbl_patron_busqueda
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Patrón de Búsqueda";
+            this.lbl_patron_busqueda.AutoSize = true;
+            this.lbl_patron_busqueda.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_patron_busqueda.Location = new System.Drawing.Point(6, 52);
+            this.lbl_patron_busqueda.Name = "lbl_patron_busqueda";
+            this.lbl_patron_busqueda.Size = new System.Drawing.Size(130, 17);
+            this.lbl_patron_busqueda.TabIndex = 21;
+            this.lbl_patron_busqueda.Text = "Patrón de Búsqueda";
             // 
             // txt_patron
             // 
@@ -172,29 +172,29 @@ namespace CLASE05.Formularios.Lotes
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 20;
             // 
-            // radioButton1
+            // rb_nombre
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(301, 72);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(74, 21);
-            this.radioButton1.TabIndex = 22;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "nombre";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_nombre.AutoSize = true;
+            this.rb_nombre.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_nombre.Location = new System.Drawing.Point(301, 72);
+            this.rb_nombre.Name = "rb_nombre";
+            this.rb_nombre.Size = new System.Drawing.Size(74, 21);
+            this.rb_nombre.TabIndex = 22;
+            this.rb_nombre.TabStop = true;
+            this.rb_nombre.Text = "nombre";
+            this.rb_nombre.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_fecha_compra
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(301, 99);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(113, 21);
-            this.radioButton2.TabIndex = 23;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "fecha_compra";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_fecha_compra.AutoSize = true;
+            this.rb_fecha_compra.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_fecha_compra.Location = new System.Drawing.Point(301, 99);
+            this.rb_fecha_compra.Name = "rb_fecha_compra";
+            this.rb_fecha_compra.Size = new System.Drawing.Size(113, 21);
+            this.rb_fecha_compra.TabIndex = 23;
+            this.rb_fecha_compra.TabStop = true;
+            this.rb_fecha_compra.Text = "fecha_compra";
+            this.rb_fecha_compra.UseVisualStyleBackColor = true;
             // 
             // Frm_ABM_Lotes
             // 
@@ -203,11 +203,11 @@ namespace CLASE05.Formularios.Lotes
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 453);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_consulta);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_Lotes";
             this.Text = "Frm_ABM_Lotes";
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.grid_consulta, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.btn_alta, 0);
@@ -220,7 +220,7 @@ namespace CLASE05.Formularios.Lotes
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,12 +228,12 @@ namespace CLASE05.Formularios.Lotes
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.RadioButton rb_n_usuario;
-        private System.Windows.Forms.RadioButton rb_id_usuario;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView grid_consulta;
+        private System.Windows.Forms.RadioButton rb_numero_lote;
+        private System.Windows.Forms.RadioButton rb_nro_remito_proveedor;
+        private System.Windows.Forms.Label lbl_patron_busqueda;
         private System.Windows.Forms.MaskedTextBox txt_patron;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rb_fecha_compra;
+        private System.Windows.Forms.RadioButton rb_nombre;
     }
 }

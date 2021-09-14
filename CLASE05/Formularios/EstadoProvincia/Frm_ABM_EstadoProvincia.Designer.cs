@@ -29,29 +29,29 @@ namespace CLASE05.Formularios.EstadoProvincia
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_patron_busqueda = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.rb_n_usuario = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rb_estado = new System.Windows.Forms.RadioButton();
+            this.rb_provincia = new System.Windows.Forms.RadioButton();
+            this.rb_id_cliente = new System.Windows.Forms.RadioButton();
+            this.grid_estado_provincia = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_estado_provincia)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.rb_n_usuario);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.rb_estado);
+            this.groupBox1.Controls.Add(this.rb_provincia);
+            this.groupBox1.Controls.Add(this.rb_id_cliente);
+            this.groupBox1.Controls.Add(this.lbl_patron_busqueda);
             this.groupBox1.Controls.Add(this.txt_patron);
             this.groupBox1.Controls.SetChildIndex(this.txt_patron, 0);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_n_usuario, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton2, 0);
+            this.groupBox1.Controls.SetChildIndex(this.lbl_patron_busqueda, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_cliente, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_provincia, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_estado, 0);
             // 
             // btn_alta
             // 
@@ -106,15 +106,15 @@ namespace CLASE05.Formularios.EstadoProvincia
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Location = new System.Drawing.Point(601, 1);
             // 
-            // label2
+            // lbl_patron_busqueda
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 17);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Patrón de Búsqueda";
+            this.lbl_patron_busqueda.AutoSize = true;
+            this.lbl_patron_busqueda.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_patron_busqueda.Location = new System.Drawing.Point(4, 32);
+            this.lbl_patron_busqueda.Name = "lbl_patron_busqueda";
+            this.lbl_patron_busqueda.Size = new System.Drawing.Size(130, 17);
+            this.lbl_patron_busqueda.TabIndex = 25;
+            this.lbl_patron_busqueda.Text = "Patrón de Búsqueda";
             // 
             // txt_patron
             // 
@@ -128,49 +128,49 @@ namespace CLASE05.Formularios.EstadoProvincia
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 24;
             // 
-            // radioButton2
+            // rb_estado
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(302, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 21);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "estado";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_estado.AutoSize = true;
+            this.rb_estado.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_estado.Location = new System.Drawing.Point(302, 44);
+            this.rb_estado.Name = "rb_estado";
+            this.rb_estado.Size = new System.Drawing.Size(67, 21);
+            this.rb_estado.TabIndex = 28;
+            this.rb_estado.TabStop = true;
+            this.rb_estado.Text = "estado";
+            this.rb_estado.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rb_provincia
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(302, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(84, 21);
-            this.radioButton1.TabIndex = 27;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "provincia";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_provincia.AutoSize = true;
+            this.rb_provincia.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_provincia.Location = new System.Drawing.Point(302, 19);
+            this.rb_provincia.Name = "rb_provincia";
+            this.rb_provincia.Size = new System.Drawing.Size(84, 21);
+            this.rb_provincia.TabIndex = 27;
+            this.rb_provincia.TabStop = true;
+            this.rb_provincia.Text = "provincia";
+            this.rb_provincia.UseVisualStyleBackColor = true;
             // 
-            // rb_n_usuario
+            // rb_id_cliente
             // 
-            this.rb_n_usuario.AutoSize = true;
-            this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_usuario.Location = new System.Drawing.Point(302, 71);
-            this.rb_n_usuario.Name = "rb_n_usuario";
-            this.rb_n_usuario.Size = new System.Drawing.Size(86, 21);
-            this.rb_n_usuario.TabIndex = 26;
-            this.rb_n_usuario.TabStop = true;
-            this.rb_n_usuario.Text = "id_cliente";
-            this.rb_n_usuario.UseVisualStyleBackColor = true;
+            this.rb_id_cliente.AutoSize = true;
+            this.rb_id_cliente.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_cliente.Location = new System.Drawing.Point(302, 71);
+            this.rb_id_cliente.Name = "rb_id_cliente";
+            this.rb_id_cliente.Size = new System.Drawing.Size(86, 21);
+            this.rb_id_cliente.TabIndex = 26;
+            this.rb_id_cliente.TabStop = true;
+            this.rb_id_cliente.Text = "id_cliente";
+            this.rb_id_cliente.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // grid_estado_provincia
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 200);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 154);
-            this.dataGridView1.TabIndex = 29;
+            this.grid_estado_provincia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_estado_provincia.Location = new System.Drawing.Point(10, 200);
+            this.grid_estado_provincia.Name = "grid_estado_provincia";
+            this.grid_estado_provincia.Size = new System.Drawing.Size(647, 154);
+            this.grid_estado_provincia.TabIndex = 29;
             // 
             // Frm_ABM_EstadoProvincia
             // 
@@ -179,7 +179,7 @@ namespace CLASE05.Formularios.EstadoProvincia
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 521);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_estado_provincia);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_EstadoProvincia";
             this.Text = "Frm_ABM_EstadoProvincia";
@@ -193,10 +193,10 @@ namespace CLASE05.Formularios.EstadoProvincia
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.grid_estado_provincia, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_estado_provincia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,11 +204,11 @@ namespace CLASE05.Formularios.EstadoProvincia
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_patron_busqueda;
         private System.Windows.Forms.MaskedTextBox txt_patron;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton rb_n_usuario;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton rb_estado;
+        private System.Windows.Forms.RadioButton rb_provincia;
+        private System.Windows.Forms.RadioButton rb_id_cliente;
+        private System.Windows.Forms.DataGridView grid_estado_provincia;
     }
 }

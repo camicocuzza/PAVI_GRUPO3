@@ -318,6 +318,9 @@
     <EmbeddedResource Include="Formularios\Articulo\Frm_Consulta_Articulo.resx">
       <DependentUpon>Frm_Consulta_Articulo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Articulo\Frm_Modificar_Articulo.resx">
+      <DependentUpon>Frm_Modificar_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_ABM_EstadoProvincia.resx">
       <DependentUpon>Frm_ABM_EstadoProvincia.cs</DependentUpon>
     </EmbeddedResource>

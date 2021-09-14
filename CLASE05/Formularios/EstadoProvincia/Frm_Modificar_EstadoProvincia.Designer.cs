@@ -31,9 +31,9 @@ namespace CLASE05.Formularios.EstadoProvincia
         {
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_password = new CLASE05.Clases.LabelText02();
-            this.txt_id_usuario = new CLASE05.Clases.LabelText02();
-            this.txt_n_usuario = new CLASE05.Clases.LabelText02();
+            this.txt_id_cliente = new CLASE05.Clases.LabelText02();
+            this.txt_provincia = new CLASE05.Clases.LabelText02();
+            this.txt_estado = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,84 +68,84 @@ namespace CLASE05.Formularios.EstadoProvincia
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txt_password);
-            this.panel1.Controls.Add(this.txt_id_usuario);
-            this.panel1.Controls.Add(this.txt_n_usuario);
+            this.panel1.Controls.Add(this.txt_id_cliente);
+            this.panel1.Controls.Add(this.txt_provincia);
+            this.panel1.Controls.Add(this.txt_estado);
             this.panel1.Controls.Add(this.btn_aceptar);
             this.panel1.Location = new System.Drawing.Point(10, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 266);
             this.panel1.TabIndex = 31;
             // 
-            // txt_password
+            // txt_id_cliente
             // 
-            this.txt_password._Ancho = 10;
-            this.txt_password._Decimales = 2;
-            this.txt_password._Etiqueta = "ID Cliente";
-            this.txt_password._Mask = "CCCCCCCCCC";
-            this.txt_password._MensajeError = "El password esta vácio";
-            this.txt_password._Nombre_campo = null;
-            this.txt_password._Nombre_tabla = null;
-            this.txt_password._ReadOnly = false;
-            this.txt_password._Text = "";
-            this.txt_password._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_password._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_password._Validable = true;
-            this.txt_password.BackColor = System.Drawing.Color.Transparent;
-            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_password.Location = new System.Drawing.Point(4, 91);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(257, 53);
-            this.txt_password.TabIndex = 15;
+            this.txt_id_cliente._Ancho = 10;
+            this.txt_id_cliente._Decimales = 2;
+            this.txt_id_cliente._Etiqueta = "ID Cliente";
+            this.txt_id_cliente._Mask = "CCCCCCCCCC";
+            this.txt_id_cliente._MensajeError = "El password esta vácio";
+            this.txt_id_cliente._Nombre_campo = null;
+            this.txt_id_cliente._Nombre_tabla = null;
+            this.txt_id_cliente._ReadOnly = false;
+            this.txt_id_cliente._Text = "";
+            this.txt_id_cliente._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_id_cliente._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_id_cliente._Validable = true;
+            this.txt_id_cliente.BackColor = System.Drawing.Color.Transparent;
+            this.txt_id_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_cliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_id_cliente.Location = new System.Drawing.Point(4, 91);
+            this.txt_id_cliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_cliente.Name = "txt_id_cliente";
+            this.txt_id_cliente.Size = new System.Drawing.Size(257, 36);
+            this.txt_id_cliente.TabIndex = 15;
             // 
-            // txt_id_usuario
+            // txt_provincia
             // 
-            this.txt_id_usuario._Ancho = 2;
-            this.txt_id_usuario._Decimales = 0;
-            this.txt_id_usuario._Etiqueta = "Provincia";
-            this.txt_id_usuario._Mask = "99";
-            this.txt_id_usuario._MensajeError = null;
-            this.txt_id_usuario._Nombre_campo = "id_usuario";
-            this.txt_id_usuario._Nombre_tabla = null;
-            this.txt_id_usuario._ReadOnly = false;
-            this.txt_id_usuario._Text = "";
-            this.txt_id_usuario._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_id_usuario._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
-            this.txt_id_usuario._Validable = false;
-            this.txt_id_usuario.BackColor = System.Drawing.Color.Transparent;
-            this.txt_id_usuario.Enabled = false;
-            this.txt_id_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_id_usuario.Location = new System.Drawing.Point(4, 16);
-            this.txt_id_usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_usuario.Name = "txt_id_usuario";
-            this.txt_id_usuario.Size = new System.Drawing.Size(257, 28);
-            this.txt_id_usuario.TabIndex = 13;
+            this.txt_provincia._Ancho = 2;
+            this.txt_provincia._Decimales = 0;
+            this.txt_provincia._Etiqueta = "Provincia";
+            this.txt_provincia._Mask = "99";
+            this.txt_provincia._MensajeError = null;
+            this.txt_provincia._Nombre_campo = "id_usuario";
+            this.txt_provincia._Nombre_tabla = null;
+            this.txt_provincia._ReadOnly = false;
+            this.txt_provincia._Text = "";
+            this.txt_provincia._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_provincia._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.txt_provincia._Validable = false;
+            this.txt_provincia.BackColor = System.Drawing.Color.Transparent;
+            this.txt_provincia.Enabled = false;
+            this.txt_provincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_provincia.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_provincia.Location = new System.Drawing.Point(4, 16);
+            this.txt_provincia.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_provincia.Name = "txt_provincia";
+            this.txt_provincia.Size = new System.Drawing.Size(257, 28);
+            this.txt_provincia.TabIndex = 13;
             // 
-            // txt_n_usuario
+            // txt_estado
             // 
-            this.txt_n_usuario._Ancho = 30;
-            this.txt_n_usuario._Decimales = 2;
-            this.txt_n_usuario._Etiqueta = "Estado";
-            this.txt_n_usuario._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
-            this.txt_n_usuario._MensajeError = "El nombre del usuario está vácio";
-            this.txt_n_usuario._Nombre_campo = "n_usuario";
-            this.txt_n_usuario._Nombre_tabla = null;
-            this.txt_n_usuario._ReadOnly = false;
-            this.txt_n_usuario._Text = "";
-            this.txt_n_usuario._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_n_usuario._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_n_usuario._Validable = true;
-            this.txt_n_usuario.BackColor = System.Drawing.Color.Transparent;
-            this.txt_n_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_n_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_n_usuario.Location = new System.Drawing.Point(4, 52);
-            this.txt_n_usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_n_usuario.Name = "txt_n_usuario";
-            this.txt_n_usuario.Size = new System.Drawing.Size(257, 58);
-            this.txt_n_usuario.TabIndex = 14;
+            this.txt_estado._Ancho = 30;
+            this.txt_estado._Decimales = 2;
+            this.txt_estado._Etiqueta = "Estado";
+            this.txt_estado._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.txt_estado._MensajeError = "El nombre del usuario está vácio";
+            this.txt_estado._Nombre_campo = "n_usuario";
+            this.txt_estado._Nombre_tabla = null;
+            this.txt_estado._ReadOnly = false;
+            this.txt_estado._Text = "";
+            this.txt_estado._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_estado._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_estado._Validable = true;
+            this.txt_estado.BackColor = System.Drawing.Color.Transparent;
+            this.txt_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_estado.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_estado.Location = new System.Drawing.Point(4, 52);
+            this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_estado.Name = "txt_estado";
+            this.txt_estado.Size = new System.Drawing.Size(257, 31);
+            this.txt_estado.TabIndex = 14;
             // 
             // btn_aceptar
             // 
@@ -186,9 +186,9 @@ namespace CLASE05.Formularios.EstadoProvincia
 
         public System.Windows.Forms.Label lbl_titulo;
         public System.Windows.Forms.Panel panel1;
-        public Clases.LabelText02 txt_password;
-        public Clases.LabelText02 txt_id_usuario;
-        public Clases.LabelText02 txt_n_usuario;
+        public Clases.LabelText02 txt_id_cliente;
+        public Clases.LabelText02 txt_provincia;
+        public Clases.LabelText02 txt_estado;
         public System.Windows.Forms.Button btn_aceptar;
     }
 }

@@ -30,10 +30,10 @@ namespace CLASE05.Formularios.Lotes
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelText021 = new CLASE05.Clases.LabelText02();
-            this.txt_password = new CLASE05.Clases.LabelText02();
-            this.txt_id_usuario = new CLASE05.Clases.LabelText02();
-            this.txt_n_usuario = new CLASE05.Clases.LabelText02();
+            this.txt_fecha_compra = new CLASE05.Clases.LabelText02();
+            this.txt_nombre = new CLASE05.Clases.LabelText02();
+            this.txt_nro_lote = new CLASE05.Clases.LabelText02();
+            this.txt_nro_remito = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -58,108 +58,108 @@ namespace CLASE05.Formularios.Lotes
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.labelText021);
-            this.panel1.Controls.Add(this.txt_password);
-            this.panel1.Controls.Add(this.txt_id_usuario);
-            this.panel1.Controls.Add(this.txt_n_usuario);
+            this.panel1.Controls.Add(this.txt_fecha_compra);
+            this.panel1.Controls.Add(this.txt_nombre);
+            this.panel1.Controls.Add(this.txt_nro_lote);
+            this.panel1.Controls.Add(this.txt_nro_remito);
             this.panel1.Controls.Add(this.btn_aceptar);
             this.panel1.Location = new System.Drawing.Point(10, 73);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 286);
             this.panel1.TabIndex = 29;
             // 
-            // labelText021
+            // txt_fecha_compra
             // 
-            this.labelText021._Ancho = 10;
-            this.labelText021._Decimales = 2;
-            this.labelText021._Etiqueta = "Fecha de Compra";
-            this.labelText021._Mask = "CCCCCCCCCC";
-            this.labelText021._MensajeError = "El password esta vácio";
-            this.labelText021._Nombre_campo = null;
-            this.labelText021._Nombre_tabla = null;
-            this.labelText021._ReadOnly = false;
-            this.labelText021._Text = "";
-            this.labelText021._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.labelText021._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.labelText021._Validable = true;
-            this.labelText021.BackColor = System.Drawing.Color.Transparent;
-            this.labelText021.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelText021.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelText021.Location = new System.Drawing.Point(16, 148);
-            this.labelText021.Margin = new System.Windows.Forms.Padding(4);
-            this.labelText021.Name = "labelText021";
-            this.labelText021.Size = new System.Drawing.Size(257, 53);
-            this.labelText021.TabIndex = 27;
+            this.txt_fecha_compra._Ancho = 10;
+            this.txt_fecha_compra._Decimales = 2;
+            this.txt_fecha_compra._Etiqueta = "Fecha de Compra";
+            this.txt_fecha_compra._Mask = "CCCCCCCCCC";
+            this.txt_fecha_compra._MensajeError = "El password esta vácio";
+            this.txt_fecha_compra._Nombre_campo = null;
+            this.txt_fecha_compra._Nombre_tabla = null;
+            this.txt_fecha_compra._ReadOnly = false;
+            this.txt_fecha_compra._Text = "";
+            this.txt_fecha_compra._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_fecha_compra._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_fecha_compra._Validable = true;
+            this.txt_fecha_compra.BackColor = System.Drawing.Color.Transparent;
+            this.txt_fecha_compra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha_compra.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_fecha_compra.Location = new System.Drawing.Point(16, 148);
+            this.txt_fecha_compra.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_fecha_compra.Name = "txt_fecha_compra";
+            this.txt_fecha_compra.Size = new System.Drawing.Size(257, 34);
+            this.txt_fecha_compra.TabIndex = 27;
             // 
-            // txt_password
+            // txt_nombre
             // 
-            this.txt_password._Ancho = 10;
-            this.txt_password._Decimales = 2;
-            this.txt_password._Etiqueta = "Nombre";
-            this.txt_password._Mask = "CCCCCCCCCC";
-            this.txt_password._MensajeError = "El password esta vácio";
-            this.txt_password._Nombre_campo = null;
-            this.txt_password._Nombre_tabla = null;
-            this.txt_password._ReadOnly = false;
-            this.txt_password._Text = "";
-            this.txt_password._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_password._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_password._Validable = true;
-            this.txt_password.BackColor = System.Drawing.Color.Transparent;
-            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_password.Location = new System.Drawing.Point(16, 106);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(257, 53);
-            this.txt_password.TabIndex = 26;
+            this.txt_nombre._Ancho = 10;
+            this.txt_nombre._Decimales = 2;
+            this.txt_nombre._Etiqueta = "Nombre";
+            this.txt_nombre._Mask = "CCCCCCCCCC";
+            this.txt_nombre._MensajeError = "El password esta vácio";
+            this.txt_nombre._Nombre_campo = null;
+            this.txt_nombre._Nombre_tabla = null;
+            this.txt_nombre._ReadOnly = false;
+            this.txt_nombre._Text = "";
+            this.txt_nombre._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_nombre._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_nombre._Validable = true;
+            this.txt_nombre.BackColor = System.Drawing.Color.Transparent;
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_nombre.Location = new System.Drawing.Point(16, 106);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(257, 34);
+            this.txt_nombre.TabIndex = 26;
             // 
-            // txt_id_usuario
+            // txt_nro_lote
             // 
-            this.txt_id_usuario._Ancho = 2;
-            this.txt_id_usuario._Decimales = 0;
-            this.txt_id_usuario._Etiqueta = "Nro de Lote";
-            this.txt_id_usuario._Mask = "99";
-            this.txt_id_usuario._MensajeError = null;
-            this.txt_id_usuario._Nombre_campo = "id_usuario";
-            this.txt_id_usuario._Nombre_tabla = null;
-            this.txt_id_usuario._ReadOnly = false;
-            this.txt_id_usuario._Text = "";
-            this.txt_id_usuario._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_id_usuario._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
-            this.txt_id_usuario._Validable = false;
-            this.txt_id_usuario.BackColor = System.Drawing.Color.Transparent;
-            this.txt_id_usuario.Enabled = false;
-            this.txt_id_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_id_usuario.Location = new System.Drawing.Point(16, 31);
-            this.txt_id_usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_usuario.Name = "txt_id_usuario";
-            this.txt_id_usuario.Size = new System.Drawing.Size(257, 28);
-            this.txt_id_usuario.TabIndex = 24;
+            this.txt_nro_lote._Ancho = 2;
+            this.txt_nro_lote._Decimales = 0;
+            this.txt_nro_lote._Etiqueta = "Nro de Lote";
+            this.txt_nro_lote._Mask = "99";
+            this.txt_nro_lote._MensajeError = null;
+            this.txt_nro_lote._Nombre_campo = "id_usuario";
+            this.txt_nro_lote._Nombre_tabla = null;
+            this.txt_nro_lote._ReadOnly = false;
+            this.txt_nro_lote._Text = "";
+            this.txt_nro_lote._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_nro_lote._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.txt_nro_lote._Validable = false;
+            this.txt_nro_lote.BackColor = System.Drawing.Color.Transparent;
+            this.txt_nro_lote.Enabled = false;
+            this.txt_nro_lote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nro_lote.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_nro_lote.Location = new System.Drawing.Point(16, 31);
+            this.txt_nro_lote.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nro_lote.Name = "txt_nro_lote";
+            this.txt_nro_lote.Size = new System.Drawing.Size(257, 28);
+            this.txt_nro_lote.TabIndex = 24;
             // 
-            // txt_n_usuario
+            // txt_nro_remito
             // 
-            this.txt_n_usuario._Ancho = 30;
-            this.txt_n_usuario._Decimales = 2;
-            this.txt_n_usuario._Etiqueta = "Nro Remito  Proveedor";
-            this.txt_n_usuario._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
-            this.txt_n_usuario._MensajeError = "El nombre del usuario está vácio";
-            this.txt_n_usuario._Nombre_campo = "n_usuario";
-            this.txt_n_usuario._Nombre_tabla = null;
-            this.txt_n_usuario._ReadOnly = false;
-            this.txt_n_usuario._Text = "";
-            this.txt_n_usuario._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_n_usuario._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_n_usuario._Validable = true;
-            this.txt_n_usuario.BackColor = System.Drawing.Color.Transparent;
-            this.txt_n_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_n_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_n_usuario.Location = new System.Drawing.Point(16, 67);
-            this.txt_n_usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_n_usuario.Name = "txt_n_usuario";
-            this.txt_n_usuario.Size = new System.Drawing.Size(257, 58);
-            this.txt_n_usuario.TabIndex = 25;
+            this.txt_nro_remito._Ancho = 30;
+            this.txt_nro_remito._Decimales = 2;
+            this.txt_nro_remito._Etiqueta = "Nro Remito  Proveedor";
+            this.txt_nro_remito._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.txt_nro_remito._MensajeError = "El nombre del usuario está vácio";
+            this.txt_nro_remito._Nombre_campo = "n_usuario";
+            this.txt_nro_remito._Nombre_tabla = null;
+            this.txt_nro_remito._ReadOnly = false;
+            this.txt_nro_remito._Text = "";
+            this.txt_nro_remito._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_nro_remito._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_nro_remito._Validable = true;
+            this.txt_nro_remito.BackColor = System.Drawing.Color.Transparent;
+            this.txt_nro_remito.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nro_remito.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_nro_remito.Location = new System.Drawing.Point(16, 67);
+            this.txt_nro_remito.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nro_remito.Name = "txt_nro_remito";
+            this.txt_nro_remito.Size = new System.Drawing.Size(257, 31);
+            this.txt_nro_remito.TabIndex = 25;
             // 
             // btn_aceptar
             // 
@@ -210,10 +210,10 @@ namespace CLASE05.Formularios.Lotes
         #endregion
 
         public System.Windows.Forms.Panel panel1;
-        public Clases.LabelText02 labelText021;
-        public Clases.LabelText02 txt_password;
-        public Clases.LabelText02 txt_id_usuario;
-        public Clases.LabelText02 txt_n_usuario;
+        public Clases.LabelText02 txt_fecha_compra;
+        public Clases.LabelText02 txt_nombre;
+        public Clases.LabelText02 txt_nro_lote;
+        public Clases.LabelText02 txt_nro_remito;
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
     }

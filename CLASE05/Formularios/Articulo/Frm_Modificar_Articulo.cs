@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CLASE05.Formularios.Articulo
 {
-    public partial class Frm_Modificar_Articulo : Form
+    public partial class Frm_Modificar_Articulo : CLASE05.Formularios.FrmBASE.FrmBase
     {
         public Frm_Modificar_Articulo()
         {

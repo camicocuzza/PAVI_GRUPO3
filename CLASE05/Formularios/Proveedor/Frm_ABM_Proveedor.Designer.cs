@@ -29,37 +29,37 @@ namespace CLASE05.Formularios.Proveedor
         /// </summary>
         private void InitializeComponent()
         {
-            this.rb_n_usuario = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rb_razon_social = new System.Windows.Forms.RadioButton();
+            this.rb_id_proveedor = new System.Windows.Forms.RadioButton();
+            this.rb_cuit = new System.Windows.Forms.RadioButton();
+            this.rb_fecha_inicio_operacion = new System.Windows.Forms.RadioButton();
+            this.rb_id_comprador = new System.Windows.Forms.RadioButton();
+            this.rb_id_domicilio = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grid_consulta = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_patron);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.rb_n_usuario);
+            this.groupBox1.Controls.Add(this.rb_id_domicilio);
+            this.groupBox1.Controls.Add(this.rb_id_comprador);
+            this.groupBox1.Controls.Add(this.rb_fecha_inicio_operacion);
+            this.groupBox1.Controls.Add(this.rb_cuit);
+            this.groupBox1.Controls.Add(this.rb_id_proveedor);
+            this.groupBox1.Controls.Add(this.rb_razon_social);
             this.groupBox1.Size = new System.Drawing.Size(645, 156);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_n_usuario, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton2, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton3, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.radioButton5, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_razon_social, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_proveedor, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_cuit, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_fecha_inicio_operacion, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_comprador, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_id_domicilio, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_patron, 0);
             this.groupBox1.Controls.SetChildIndex(this.label2, 0);
             // 
@@ -124,77 +124,77 @@ namespace CLASE05.Formularios.Proveedor
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Location = new System.Drawing.Point(599, 2);
             // 
-            // rb_n_usuario
+            // rb_razon_social
             // 
-            this.rb_n_usuario.AutoSize = true;
-            this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_usuario.Location = new System.Drawing.Point(298, 89);
-            this.rb_n_usuario.Name = "rb_n_usuario";
-            this.rb_n_usuario.Size = new System.Drawing.Size(102, 21);
-            this.rb_n_usuario.TabIndex = 14;
-            this.rb_n_usuario.TabStop = true;
-            this.rb_n_usuario.Text = "razon_social";
-            this.rb_n_usuario.UseVisualStyleBackColor = true;
+            this.rb_razon_social.AutoSize = true;
+            this.rb_razon_social.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_razon_social.Location = new System.Drawing.Point(298, 89);
+            this.rb_razon_social.Name = "rb_razon_social";
+            this.rb_razon_social.Size = new System.Drawing.Size(102, 21);
+            this.rb_razon_social.TabIndex = 14;
+            this.rb_razon_social.TabStop = true;
+            this.rb_razon_social.Text = "razon_social";
+            this.rb_razon_social.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rb_id_proveedor
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(298, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(107, 21);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "id_proveedor";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_id_proveedor.AutoSize = true;
+            this.rb_id_proveedor.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_proveedor.Location = new System.Drawing.Point(298, 37);
+            this.rb_id_proveedor.Name = "rb_id_proveedor";
+            this.rb_id_proveedor.Size = new System.Drawing.Size(107, 21);
+            this.rb_id_proveedor.TabIndex = 15;
+            this.rb_id_proveedor.TabStop = true;
+            this.rb_id_proveedor.Text = "id_proveedor";
+            this.rb_id_proveedor.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_cuit
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(298, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 21);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "cuit";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_cuit.AutoSize = true;
+            this.rb_cuit.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_cuit.Location = new System.Drawing.Point(298, 62);
+            this.rb_cuit.Name = "rb_cuit";
+            this.rb_cuit.Size = new System.Drawing.Size(50, 21);
+            this.rb_cuit.TabIndex = 16;
+            this.rb_cuit.TabStop = true;
+            this.rb_cuit.Text = "cuit";
+            this.rb_cuit.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_fecha_inicio_operacion
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.Location = new System.Drawing.Point(413, 62);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(169, 21);
-            this.radioButton3.TabIndex = 17;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "fecha_inicio_operacion";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_fecha_inicio_operacion.AutoSize = true;
+            this.rb_fecha_inicio_operacion.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_fecha_inicio_operacion.Location = new System.Drawing.Point(413, 62);
+            this.rb_fecha_inicio_operacion.Name = "rb_fecha_inicio_operacion";
+            this.rb_fecha_inicio_operacion.Size = new System.Drawing.Size(169, 21);
+            this.rb_fecha_inicio_operacion.TabIndex = 17;
+            this.rb_fecha_inicio_operacion.TabStop = true;
+            this.rb_fecha_inicio_operacion.Text = "fecha_inicio_operacion";
+            this.rb_fecha_inicio_operacion.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_id_comprador
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton4.Location = new System.Drawing.Point(413, 89);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(112, 21);
-            this.radioButton4.TabIndex = 18;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "id_comprador";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_id_comprador.AutoSize = true;
+            this.rb_id_comprador.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_comprador.Location = new System.Drawing.Point(413, 89);
+            this.rb_id_comprador.Name = "rb_id_comprador";
+            this.rb_id_comprador.Size = new System.Drawing.Size(112, 21);
+            this.rb_id_comprador.TabIndex = 18;
+            this.rb_id_comprador.TabStop = true;
+            this.rb_id_comprador.Text = "id_comprador";
+            this.rb_id_comprador.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rb_id_domicilio
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton5.Location = new System.Drawing.Point(413, 36);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(103, 21);
-            this.radioButton5.TabIndex = 19;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "id_domicilio";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_id_domicilio.AutoSize = true;
+            this.rb_id_domicilio.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_id_domicilio.Location = new System.Drawing.Point(413, 36);
+            this.rb_id_domicilio.Name = "rb_id_domicilio";
+            this.rb_id_domicilio.Size = new System.Drawing.Size(103, 21);
+            this.rb_id_domicilio.TabIndex = 19;
+            this.rb_id_domicilio.TabStop = true;
+            this.rb_id_domicilio.Text = "id_domicilio";
+            this.rb_id_domicilio.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -218,13 +218,13 @@ namespace CLASE05.Formularios.Proveedor
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 22;
             // 
-            // dataGridView1
+            // grid_consulta
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 154);
-            this.dataGridView1.TabIndex = 7;
+            this.grid_consulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_consulta.Location = new System.Drawing.Point(12, 243);
+            this.grid_consulta.Name = "grid_consulta";
+            this.grid_consulta.Size = new System.Drawing.Size(647, 154);
+            this.grid_consulta.TabIndex = 7;
             // 
             // Frm_ABM_Proveedor
             // 
@@ -233,7 +233,7 @@ namespace CLASE05.Formularios.Proveedor
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 521);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grid_consulta);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_Proveedor";
             this.Text = "Frm_ABM_Proveedor";
@@ -247,10 +247,10 @@ namespace CLASE05.Formularios.Proveedor
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.grid_consulta, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,14 +258,14 @@ namespace CLASE05.Formularios.Proveedor
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton rb_n_usuario;
+        private System.Windows.Forms.RadioButton rb_id_domicilio;
+        private System.Windows.Forms.RadioButton rb_id_comprador;
+        private System.Windows.Forms.RadioButton rb_fecha_inicio_operacion;
+        private System.Windows.Forms.RadioButton rb_cuit;
+        private System.Windows.Forms.RadioButton rb_id_proveedor;
+        private System.Windows.Forms.RadioButton rb_razon_social;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox txt_patron;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grid_consulta;
     }
 }

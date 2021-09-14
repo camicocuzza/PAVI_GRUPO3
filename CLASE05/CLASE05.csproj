@@ -129,6 +129,12 @@
     <Compile Include="Formularios\Articulo\Frm_Consulta_Articulo.Designer.cs">
       <DependentUpon>Frm_Consulta_Articulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Articulo\Frm_Modificar_Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Articulo\Frm_Modificar_Articulo.Designer.cs">
+      <DependentUpon>Frm_Modificar_Articulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,42 @@
     </Compile>
     <Compile Include="Formularios\Lotes\Frm_Consulta_Lote.Designer.cs">
       <DependentUpon>Frm_Consulta_Lote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Modificar_Lote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Lotes\Frm_Modificar_Lote.Designer.cs">
+      <DependentUpon>Frm_Modificar_Lote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_ABM_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_ABM_Proveedor.Designer.cs">
+      <DependentUpon>Frm_ABM_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Alta_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Alta_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Alta_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Baja_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Baja_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Baja_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Consulta_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Consulta_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Consulta_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Modificar_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Frm_Modificar_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Modificar_Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
@@ -272,6 +314,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Lotes\Frm_Consulta_Lote.resx">
       <DependentUpon>Frm_Consulta_Lote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Lotes\Frm_Modificar_Lote.resx">
+      <DependentUpon>Frm_Modificar_Lote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Frm_ABM_Proveedor.resx">
+      <DependentUpon>Frm_ABM_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Frm_Alta_Proveedor.resx">
+      <DependentUpon>Frm_Alta_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Frm_Baja_Proveedor.resx">
+      <DependentUpon>Frm_Baja_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Frm_Consulta_Proveedor.resx">
+      <DependentUpon>Frm_Consulta_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Frm_Modificar_Proveedor.resx">
+      <DependentUpon>Frm_Modificar_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>

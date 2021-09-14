@@ -67,9 +67,10 @@ namespace CLASE05.Formularios.Articulo
             this.lbl_titulo.ForeColor = System.Drawing.Color.White;
             this.lbl_titulo.Location = new System.Drawing.Point(4, 26);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(258, 31);
+            this.lbl_titulo.Size = new System.Drawing.Size(223, 31);
             this.lbl_titulo.TabIndex = 31;
-            this.lbl_titulo.Text = "Modificar  Proveedor";
+            this.lbl_titulo.Text = "Modificar Articulo";
+            this.lbl_titulo.Click += new System.EventHandler(this.lbl_titulo_Click);
             // 
             // panel1
             // 

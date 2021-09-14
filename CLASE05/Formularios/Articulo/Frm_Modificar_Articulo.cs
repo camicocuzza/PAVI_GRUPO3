@@ -16,5 +16,10 @@ namespace CLASE05.Formularios.Articulo
         {
             InitializeComponent();
         }
+
+        private void lbl_titulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -337,9 +337,9 @@ namespace CLASE05.Formularios.Articulo
             this.lbl_titulo.ForeColor = System.Drawing.Color.White;
             this.lbl_titulo.Location = new System.Drawing.Point(12, 9);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(223, 31);
+            this.lbl_titulo.Size = new System.Drawing.Size(221, 31);
             this.lbl_titulo.TabIndex = 30;
-            this.lbl_titulo.Text = "Modificar Articulo";
+            this.lbl_titulo.Text = "Consultar Articulo";
             // 
             // Frm_Consulta_Articulo
             // 

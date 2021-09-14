@@ -41,7 +41,9 @@ namespace CLASE05.Formularios.Articulo
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -58,7 +60,7 @@ namespace CLASE05.Formularios.Articulo
             this.groupBox1.Controls.Add(this.txt_patron);
             this.groupBox1.Controls.Add(this.rb_id_usuario);
             this.groupBox1.Controls.Add(this.rb_n_usuario);
-            this.groupBox1.Size = new System.Drawing.Size(645, 251);
+            this.groupBox1.Size = new System.Drawing.Size(645, 215);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_n_usuario, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_id_usuario, 0);
@@ -75,7 +77,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(536, 202);
+            this.btn_buscar.Location = new System.Drawing.Point(555, 178);
             // 
             // btn_alta
             // 
@@ -83,7 +85,8 @@ namespace CLASE05.Formularios.Articulo
             this.btn_alta.FlatAppearance.BorderSize = 0;
             this.btn_alta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_alta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_alta.Location = new System.Drawing.Point(489, 359);
+            this.btn_alta.Location = new System.Drawing.Point(489, 510);
+            this.btn_alta.Click += new System.EventHandler(this.btn_alta_Click);
             // 
             // btn_modificar
             // 
@@ -91,7 +94,8 @@ namespace CLASE05.Formularios.Articulo
             this.btn_modificar.FlatAppearance.BorderSize = 0;
             this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_modificar.Location = new System.Drawing.Point(550, 359);
+            this.btn_modificar.Location = new System.Drawing.Point(550, 510);
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_borrar
             // 
@@ -99,11 +103,12 @@ namespace CLASE05.Formularios.Articulo
             this.btn_borrar.FlatAppearance.BorderSize = 0;
             this.btn_borrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_borrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_borrar.Location = new System.Drawing.Point(607, 356);
+            this.btn_borrar.Location = new System.Drawing.Point(607, 507);
+            this.btn_borrar.Click += new System.EventHandler(this.btn_borrar_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Location = new System.Drawing.Point(12, 47);
             this.label1.Size = new System.Drawing.Size(248, 31);
             this.label1.Text = "Consulta de Articulo";
             // 
@@ -113,7 +118,8 @@ namespace CLASE05.Formularios.Articulo
             this.btn_consultar.FlatAppearance.BorderSize = 0;
             this.btn_consultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_consultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_consultar.Location = new System.Drawing.Point(427, 358);
+            this.btn_consultar.Location = new System.Drawing.Point(427, 509);
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
             // btn_cerrar
             // 
@@ -134,7 +140,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(331, 181);
+            this.radioButton2.Location = new System.Drawing.Point(477, 110);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(115, 21);
             this.radioButton2.TabIndex = 29;
@@ -146,7 +152,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(331, 154);
+            this.radioButton1.Location = new System.Drawing.Point(477, 83);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(78, 21);
             this.radioButton1.TabIndex = 28;
@@ -158,7 +164,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 53);
+            this.label2.Location = new System.Drawing.Point(18, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 17);
             this.label2.TabIndex = 27;
@@ -170,7 +176,7 @@ namespace CLASE05.Formularios.Articulo
             this.txt_patron.Enabled = false;
             this.txt_patron.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_patron.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_patron.Location = new System.Drawing.Point(154, 50);
+            this.txt_patron.Location = new System.Drawing.Point(154, 38);
             this.txt_patron.Mask = "LLLLLLLLLLLLLLLLLLLL";
             this.txt_patron.Name = "txt_patron";
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
@@ -180,7 +186,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.rb_id_usuario.AutoSize = true;
             this.rb_id_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_usuario.Location = new System.Drawing.Point(331, 127);
+            this.rb_id_usuario.Location = new System.Drawing.Point(477, 56);
             this.rb_id_usuario.Name = "rb_id_usuario";
             this.rb_id_usuario.Size = new System.Drawing.Size(74, 21);
             this.rb_id_usuario.TabIndex = 25;
@@ -192,7 +198,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.rb_n_usuario.AutoSize = true;
             this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_usuario.Location = new System.Drawing.Point(331, 100);
+            this.rb_n_usuario.Location = new System.Drawing.Point(477, 29);
             this.rb_n_usuario.Name = "rb_n_usuario";
             this.rb_n_usuario.Size = new System.Drawing.Size(96, 21);
             this.rb_n_usuario.TabIndex = 24;
@@ -204,7 +210,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.Location = new System.Drawing.Point(154, 181);
+            this.radioButton3.Location = new System.Drawing.Point(300, 110);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(60, 21);
             this.radioButton3.TabIndex = 33;
@@ -216,7 +222,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton4.Location = new System.Drawing.Point(154, 154);
+            this.radioButton4.Location = new System.Drawing.Point(300, 83);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(85, 21);
             this.radioButton4.TabIndex = 32;
@@ -228,7 +234,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton5.Location = new System.Drawing.Point(154, 127);
+            this.radioButton5.Location = new System.Drawing.Point(300, 56);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(81, 21);
             this.radioButton5.TabIndex = 31;
@@ -240,7 +246,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton6.Location = new System.Drawing.Point(154, 100);
+            this.radioButton6.Location = new System.Drawing.Point(300, 29);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(69, 21);
             this.radioButton6.TabIndex = 30;
@@ -252,7 +258,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton7.Location = new System.Drawing.Point(154, 208);
+            this.radioButton7.Location = new System.Drawing.Point(300, 137);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(110, 21);
             this.radioButton7.TabIndex = 35;
@@ -264,7 +270,7 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton8.Location = new System.Drawing.Point(331, 208);
+            this.radioButton8.Location = new System.Drawing.Point(477, 137);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(107, 21);
             this.radioButton8.TabIndex = 34;
@@ -272,18 +278,40 @@ namespace CLASE05.Formularios.Articulo
             this.radioButton8.Text = "id_proveedor";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 302);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(647, 181);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // Frm_ABM_Articulo
             // 
             this._PosiciónVisible = true;
             this._titulo = "Consulta de Articulo";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 411);
+            this.ClientSize = new System.Drawing.Size(672, 576);
+            this.Controls.Add(this.dataGridView1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_Articulo";
             this.Text = "Frm_ABM_Articulo";
+            this.Load += new System.EventHandler(this.Frm_ABM_Articulo_Load);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.groupBox1, 0);
+            this.Controls.SetChildIndex(this.btn_alta, 0);
+            this.Controls.SetChildIndex(this.btn_modificar, 0);
+            this.Controls.SetChildIndex(this.btn_borrar, 0);
+            this.Controls.SetChildIndex(this.btn_consultar, 0);
+            this.Controls.SetChildIndex(this.lbl_posicion, 0);
+            this.Controls.SetChildIndex(this.btn_cerrar, 0);
+            this.Controls.SetChildIndex(this.btn_maximizar, 0);
+            this.Controls.SetChildIndex(this.btn_minimizar, 0);
+            this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +331,6 @@ namespace CLASE05.Formularios.Articulo
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

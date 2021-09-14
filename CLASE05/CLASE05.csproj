@@ -135,6 +135,36 @@
     <Compile Include="Formularios\Articulo\Frm_Modificar_Articulo.Designer.cs">
       <DependentUpon>Frm_Modificar_Articulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_ABM_EstadoProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_ABM_EstadoProvincia.Designer.cs">
+      <DependentUpon>Frm_ABM_EstadoProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Alta_EstadoProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Alta_EstadoProvincia.Designer.cs">
+      <DependentUpon>Frm_Alta_EstadoProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Baja_EstadoProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Baja_EstadoProvincia.Designer.cs">
+      <DependentUpon>Frm_Baja_EstadoProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Consulta_EstadoProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Consulta_EstadoProvincia.Designer.cs">
+      <DependentUpon>Frm_Consulta_EstadoProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Modificar_EstadoProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EstadoProvincia\Frm_Modificar_EstadoProvincia.Designer.cs">
+      <DependentUpon>Frm_Modificar_EstadoProvincia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +317,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Articulo\Frm_Consulta_Articulo.resx">
       <DependentUpon>Frm_Consulta_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_ABM_EstadoProvincia.resx">
+      <DependentUpon>Frm_ABM_EstadoProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_Alta_EstadoProvincia.resx">
+      <DependentUpon>Frm_Alta_EstadoProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_Baja_EstadoProvincia.resx">
+      <DependentUpon>Frm_Baja_EstadoProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_Consulta_EstadoProvincia.resx">
+      <DependentUpon>Frm_Consulta_EstadoProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EstadoProvincia\Frm_Modificar_EstadoProvincia.resx">
+      <DependentUpon>Frm_Modificar_EstadoProvincia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>

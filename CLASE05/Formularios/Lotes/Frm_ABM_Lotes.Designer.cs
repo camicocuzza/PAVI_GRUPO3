@@ -59,7 +59,7 @@ namespace CLASE05.Formularios.Lotes
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(554, 90);
+            this.btn_buscar.Location = new System.Drawing.Point(554, 94);
             // 
             // btn_alta
             // 
@@ -90,7 +90,7 @@ namespace CLASE05.Formularios.Lotes
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(15, 25);
+            this.label1.Location = new System.Drawing.Point(15, 47);
             this.label1.Size = new System.Drawing.Size(208, 31);
             this.label1.Text = "Consulta de Lote";
             // 
@@ -132,10 +132,10 @@ namespace CLASE05.Formularios.Lotes
             this.rb_n_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
             this.rb_n_usuario.Location = new System.Drawing.Point(301, 18);
             this.rb_n_usuario.Name = "rb_n_usuario";
-            this.rb_n_usuario.Size = new System.Drawing.Size(84, 21);
+            this.rb_n_usuario.Size = new System.Drawing.Size(77, 21);
             this.rb_n_usuario.TabIndex = 13;
             this.rb_n_usuario.TabStop = true;
-            this.rb_n_usuario.Text = "num_lote";
+            this.rb_n_usuario.Text = "Nombre";
             this.rb_n_usuario.UseVisualStyleBackColor = true;
             // 
             // rb_id_usuario

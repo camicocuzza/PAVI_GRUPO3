@@ -21,6 +21,26 @@ namespace CLASE05.Formularios.Articulo
         {
             Frm_Consulta_Articulo frm_alta = new Frm_Consulta_Articulo();
             frm_alta.ShowDialog();
+
+            private void btn_consultar_Click(object sender, EventArgs e)
+            {
+                if (grid_articulo.Rows.Count == 0)
+                {
+                    MessageBox.Show("Falta buscar usuarios", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+                if (grid_articulo.CurrentCell.RowIndex == -1)
+                {
+                    MessageBox.Show("Falta seleccionar un usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+
+                Frm_Consulta_Articulo frm_consulta = new Frm_Consulta_Articulo();
+                frm_consulta.id_articulo = grid_articulo.CurrentRow.Cells[0].Value.ToString();
+                frm_consulta.ShowDialog();
+
+            }
+
         }
 
         private void btn_alta_Click(object sender, EventArgs e)

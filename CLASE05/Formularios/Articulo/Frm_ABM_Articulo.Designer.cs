@@ -29,18 +29,13 @@ namespace CLASE05.Formularios.Articulo
         /// </summary>
         private void InitializeComponent()
         {
-            this.rb_id_pais_origen_articulo = new System.Windows.Forms.RadioButton();
-            this.rb_id_rubro_articulo = new System.Windows.Forms.RadioButton();
             this.lbl_pat_bus_articulo = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
             this.rb_nombre_articulo = new System.Windows.Forms.RadioButton();
-            this.rb_plazo_pago_articulo = new System.Windows.Forms.RadioButton();
-            this.rb_costo_articulo = new System.Windows.Forms.RadioButton();
             this.rb_num_serie_articulo = new System.Windows.Forms.RadioButton();
             this.rb_num_lote_articulo = new System.Windows.Forms.RadioButton();
             this.rb_codigo_articulo = new System.Windows.Forms.RadioButton();
-            this.rb_tiempo_envio_articulo = new System.Windows.Forms.RadioButton();
-            this.rb_id_provedor_articulo = new System.Windows.Forms.RadioButton();
+            this.rb_cuit_provedor_articulo = new System.Windows.Forms.RadioButton();
             this.grid_articulo = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_articulo)).BeginInit();
@@ -48,32 +43,22 @@ namespace CLASE05.Formularios.Articulo
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rb_tiempo_envio_articulo);
-            this.groupBox1.Controls.Add(this.rb_id_provedor_articulo);
-            this.groupBox1.Controls.Add(this.rb_costo_articulo);
+            this.groupBox1.Controls.Add(this.rb_cuit_provedor_articulo);
             this.groupBox1.Controls.Add(this.rb_num_serie_articulo);
             this.groupBox1.Controls.Add(this.rb_num_lote_articulo);
             this.groupBox1.Controls.Add(this.rb_codigo_articulo);
-            this.groupBox1.Controls.Add(this.rb_id_pais_origen_articulo);
-            this.groupBox1.Controls.Add(this.rb_id_rubro_articulo);
             this.groupBox1.Controls.Add(this.lbl_pat_bus_articulo);
             this.groupBox1.Controls.Add(this.txt_patron);
             this.groupBox1.Controls.Add(this.rb_nombre_articulo);
-            this.groupBox1.Controls.Add(this.rb_plazo_pago_articulo);
             this.groupBox1.Size = new System.Drawing.Size(645, 215);
             this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_plazo_pago_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_nombre_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_patron, 0);
             this.groupBox1.Controls.SetChildIndex(this.lbl_pat_bus_articulo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_id_rubro_articulo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_id_pais_origen_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_codigo_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_num_lote_articulo, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_num_serie_articulo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_costo_articulo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_id_provedor_articulo, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_tiempo_envio_articulo, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_cuit_provedor_articulo, 0);
             // 
             // btn_buscar
             // 
@@ -136,30 +121,6 @@ namespace CLASE05.Formularios.Articulo
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Location = new System.Drawing.Point(602, 1);
             // 
-            // rb_id_pais_origen_articulo
-            // 
-            this.rb_id_pais_origen_articulo.AutoSize = true;
-            this.rb_id_pais_origen_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_pais_origen_articulo.Location = new System.Drawing.Point(477, 110);
-            this.rb_id_pais_origen_articulo.Name = "rb_id_pais_origen_articulo";
-            this.rb_id_pais_origen_articulo.Size = new System.Drawing.Size(115, 21);
-            this.rb_id_pais_origen_articulo.TabIndex = 29;
-            this.rb_id_pais_origen_articulo.TabStop = true;
-            this.rb_id_pais_origen_articulo.Text = "id_pais_origen";
-            this.rb_id_pais_origen_articulo.UseVisualStyleBackColor = true;
-            // 
-            // rb_id_rubro_articulo
-            // 
-            this.rb_id_rubro_articulo.AutoSize = true;
-            this.rb_id_rubro_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_rubro_articulo.Location = new System.Drawing.Point(477, 83);
-            this.rb_id_rubro_articulo.Name = "rb_id_rubro_articulo";
-            this.rb_id_rubro_articulo.Size = new System.Drawing.Size(78, 21);
-            this.rb_id_rubro_articulo.TabIndex = 28;
-            this.rb_id_rubro_articulo.TabStop = true;
-            this.rb_id_rubro_articulo.Text = "id_rubro";
-            this.rb_id_rubro_articulo.UseVisualStyleBackColor = true;
-            // 
             // lbl_pat_bus_articulo
             // 
             this.lbl_pat_bus_articulo.AutoSize = true;
@@ -186,37 +147,13 @@ namespace CLASE05.Formularios.Articulo
             // 
             this.rb_nombre_articulo.AutoSize = true;
             this.rb_nombre_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_nombre_articulo.Location = new System.Drawing.Point(477, 56);
+            this.rb_nombre_articulo.Location = new System.Drawing.Point(300, 110);
             this.rb_nombre_articulo.Name = "rb_nombre_articulo";
             this.rb_nombre_articulo.Size = new System.Drawing.Size(74, 21);
             this.rb_nombre_articulo.TabIndex = 25;
             this.rb_nombre_articulo.TabStop = true;
             this.rb_nombre_articulo.Text = "nombre";
             this.rb_nombre_articulo.UseVisualStyleBackColor = true;
-            // 
-            // rb_plazo_pago_articulo
-            // 
-            this.rb_plazo_pago_articulo.AutoSize = true;
-            this.rb_plazo_pago_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_plazo_pago_articulo.Location = new System.Drawing.Point(477, 29);
-            this.rb_plazo_pago_articulo.Name = "rb_plazo_pago_articulo";
-            this.rb_plazo_pago_articulo.Size = new System.Drawing.Size(96, 21);
-            this.rb_plazo_pago_articulo.TabIndex = 24;
-            this.rb_plazo_pago_articulo.TabStop = true;
-            this.rb_plazo_pago_articulo.Text = "plazo_pago";
-            this.rb_plazo_pago_articulo.UseVisualStyleBackColor = true;
-            // 
-            // rb_costo_articulo
-            // 
-            this.rb_costo_articulo.AutoSize = true;
-            this.rb_costo_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_costo_articulo.Location = new System.Drawing.Point(300, 110);
-            this.rb_costo_articulo.Name = "rb_costo_articulo";
-            this.rb_costo_articulo.Size = new System.Drawing.Size(60, 21);
-            this.rb_costo_articulo.TabIndex = 33;
-            this.rb_costo_articulo.TabStop = true;
-            this.rb_costo_articulo.Text = "costo";
-            this.rb_costo_articulo.UseVisualStyleBackColor = true;
             // 
             // rb_num_serie_articulo
             // 
@@ -254,29 +191,17 @@ namespace CLASE05.Formularios.Articulo
             this.rb_codigo_articulo.Text = "codigo";
             this.rb_codigo_articulo.UseVisualStyleBackColor = true;
             // 
-            // rb_tiempo_envio_articulo
+            // rb_cuit_provedor_articulo
             // 
-            this.rb_tiempo_envio_articulo.AutoSize = true;
-            this.rb_tiempo_envio_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_tiempo_envio_articulo.Location = new System.Drawing.Point(300, 137);
-            this.rb_tiempo_envio_articulo.Name = "rb_tiempo_envio_articulo";
-            this.rb_tiempo_envio_articulo.Size = new System.Drawing.Size(110, 21);
-            this.rb_tiempo_envio_articulo.TabIndex = 35;
-            this.rb_tiempo_envio_articulo.TabStop = true;
-            this.rb_tiempo_envio_articulo.Text = "tiempo_envio";
-            this.rb_tiempo_envio_articulo.UseVisualStyleBackColor = true;
-            // 
-            // rb_id_provedor_articulo
-            // 
-            this.rb_id_provedor_articulo.AutoSize = true;
-            this.rb_id_provedor_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_provedor_articulo.Location = new System.Drawing.Point(477, 137);
-            this.rb_id_provedor_articulo.Name = "rb_id_provedor_articulo";
-            this.rb_id_provedor_articulo.Size = new System.Drawing.Size(107, 21);
-            this.rb_id_provedor_articulo.TabIndex = 34;
-            this.rb_id_provedor_articulo.TabStop = true;
-            this.rb_id_provedor_articulo.Text = "id_proveedor";
-            this.rb_id_provedor_articulo.UseVisualStyleBackColor = true;
+            this.rb_cuit_provedor_articulo.AutoSize = true;
+            this.rb_cuit_provedor_articulo.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_cuit_provedor_articulo.Location = new System.Drawing.Point(300, 137);
+            this.rb_cuit_provedor_articulo.Name = "rb_cuit_provedor_articulo";
+            this.rb_cuit_provedor_articulo.Size = new System.Drawing.Size(119, 21);
+            this.rb_cuit_provedor_articulo.TabIndex = 34;
+            this.rb_cuit_provedor_articulo.TabStop = true;
+            this.rb_cuit_provedor_articulo.Text = "cuit_proveedor";
+            this.rb_cuit_provedor_articulo.UseVisualStyleBackColor = true;
             // 
             // grid_articulo
             // 
@@ -318,16 +243,10 @@ namespace CLASE05.Formularios.Articulo
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton rb_id_pais_origen_articulo;
-        private System.Windows.Forms.RadioButton rb_id_rubro_articulo;
         private System.Windows.Forms.Label lbl_pat_bus_articulo;
         private System.Windows.Forms.MaskedTextBox txt_patron;
         private System.Windows.Forms.RadioButton rb_nombre_articulo;
-        private System.Windows.Forms.RadioButton rb_plazo_pago_articulo;
-        private System.Windows.Forms.RadioButton rb_tiempo_envio_articulo;
-        private System.Windows.Forms.RadioButton rb_id_provedor_articulo;
-        private System.Windows.Forms.RadioButton rb_costo_articulo;
+        private System.Windows.Forms.RadioButton rb_cuit_provedor_articulo;
         private System.Windows.Forms.RadioButton rb_num_serie_articulo;
         private System.Windows.Forms.RadioButton rb_num_lote_articulo;
         private System.Windows.Forms.RadioButton rb_codigo_articulo;

@@ -27,6 +27,7 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_id_usuario.Text = string.Empty;
             txt_id_usuario.Enabled = false;
             txt_patron.Enabled = false;
+            //grid_usuarios.Rows.Clear(); quiero que borre las lineas al tocar la goma de borrar
            // btn_buscar.Enabled = true;
         }
 

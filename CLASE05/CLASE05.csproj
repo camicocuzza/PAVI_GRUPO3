@@ -291,6 +291,8 @@
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificacion.Designer.cs">
       <DependentUpon>Frm_Usuario_Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NE_Articulo.cs" />
+    <Compile Include="Negocios\NE_Lotes.cs" />
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

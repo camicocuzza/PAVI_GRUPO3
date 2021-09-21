@@ -83,6 +83,9 @@ namespace CLASE05.Clases
                     // String.Format("{0:000000.00}", double.Parse("10,25")) => 000010.25
                     // error 102500.00
                 }
+
+                if (TipoD != TipoDato.fecha)
+                    TxtDato.Text = value;
             }
 
         }

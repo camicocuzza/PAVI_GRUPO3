@@ -35,7 +35,8 @@ namespace CLASE05.Formularios.FrmBASE
         //aca van los get set
         public string id_usuario { get; set; }
         public string id_tipo_factura { get; set; }
-        public string id_rubro{ get; set; }
+        public string id_rubro { get; set; }
+        public string id_compra { get; set; }
 
         public FrmBase()
         {

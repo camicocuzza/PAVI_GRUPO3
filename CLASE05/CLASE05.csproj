@@ -105,6 +105,36 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Compra\Frm_ABM_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_ABM_Compra.Designer.cs">
+      <DependentUpon>Frm_ABM_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Alta_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Alta_Compra.Designer.cs">
+      <DependentUpon>Frm_Alta_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Baja_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Baja_Compra.Designer.cs">
+      <DependentUpon>Frm_Baja_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Consulta_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Consulta_Compra.Designer.cs">
+      <DependentUpon>Frm_Consulta_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Modificacion_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Compra\Frm_Modificacion_Compra.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Compra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +261,7 @@
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificacion.Designer.cs">
       <DependentUpon>Frm_Usuario_Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NE_Compra.cs" />
     <Compile Include="Negocios\NE_Rubros.cs" />
     <Compile Include="Negocios\NE_TipoFactura.cs" />
     <Compile Include="Negocios\NE_Usuarios.cs" />
@@ -247,6 +278,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Compra\Frm_ABM_Compra.resx">
+      <DependentUpon>Frm_ABM_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Compra\Frm_Alta_Compra.resx">
+      <DependentUpon>Frm_Alta_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Compra\Frm_Consulta_Compra.resx">
+      <DependentUpon>Frm_Consulta_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>

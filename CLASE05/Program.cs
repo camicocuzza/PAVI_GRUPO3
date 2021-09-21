@@ -8,6 +8,7 @@ using CLASE05.Formularios.FrmBASE;
 using CLASE05.Formularios.Usuarios;
 using CLASE05.Formularios.TipoFactura;
 using CLASE05.Formularios.Rubros;
+using CLASE05.Formularios.Compra;
 
 namespace CLASE05
 {
@@ -21,7 +22,7 @@ namespace CLASE05
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Escritorio());
+            //Application.Run(new Frm_Escritorio());
             //Application.Run(new Frm_Login());
             //Application.Run(new FrmLogin());
             //Application.Run(new Frm_ABM_Usuario_Entrada());
@@ -29,6 +30,8 @@ namespace CLASE05
             //Application.Run(new Frm_Log());
             //Application.Run(new Frm_ABM_TipoFactura());
             //Application.Run(new Frm_ABM_Rubros());
+            Application.Run(new Frm_ABM_Compra());
+
         }
     }
 }

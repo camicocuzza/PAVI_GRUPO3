@@ -41,12 +41,14 @@ namespace CLASE05.Formularios.Rubros
             this.rb_id_Rubro = new System.Windows.Forms.RadioButton();
             this.rb_n_Rubro = new System.Windows.Forms.RadioButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.rb_todos = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Rubros)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rb_todos);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_id_Rubro);
             this.groupBox1.Controls.Add(this.rb_id_Rubro);
@@ -64,6 +66,7 @@ namespace CLASE05.Formularios.Rubros
             this.groupBox1.Controls.SetChildIndex(this.rb_id_Rubro, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_id_Rubro, 0);
             this.groupBox1.Controls.SetChildIndex(this.label3, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_todos, 0);
             // 
             // btn_buscar
             // 
@@ -220,7 +223,7 @@ namespace CLASE05.Formularios.Rubros
             // 
             this.rb_id_Rubro.AutoSize = true;
             this.rb_id_Rubro.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_Rubro.Location = new System.Drawing.Point(356, 61);
+            this.rb_id_Rubro.Location = new System.Drawing.Point(356, 56);
             this.rb_id_Rubro.Name = "rb_id_Rubro";
             this.rb_id_Rubro.Size = new System.Drawing.Size(81, 21);
             this.rb_id_Rubro.TabIndex = 34;
@@ -233,7 +236,7 @@ namespace CLASE05.Formularios.Rubros
             // 
             this.rb_n_Rubro.AutoSize = true;
             this.rb_n_Rubro.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_Rubro.Location = new System.Drawing.Point(356, 31);
+            this.rb_n_Rubro.Location = new System.Drawing.Point(356, 33);
             this.rb_n_Rubro.Name = "rb_n_Rubro";
             this.rb_n_Rubro.Size = new System.Drawing.Size(118, 21);
             this.rb_n_Rubro.TabIndex = 33;
@@ -241,6 +244,18 @@ namespace CLASE05.Formularios.Rubros
             this.rb_n_Rubro.Text = "Nombre Rubro";
             this.rb_n_Rubro.UseVisualStyleBackColor = true;
             this.rb_n_Rubro.CheckedChanged += new System.EventHandler(this.rb_n_Rubro_CheckedChanged);
+            // 
+            // rb_todos
+            // 
+            this.rb_todos.AutoSize = true;
+            this.rb_todos.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_todos.Location = new System.Drawing.Point(356, 77);
+            this.rb_todos.Name = "rb_todos";
+            this.rb_todos.Size = new System.Drawing.Size(58, 21);
+            this.rb_todos.TabIndex = 37;
+            this.rb_todos.TabStop = true;
+            this.rb_todos.Text = "Todo";
+            this.rb_todos.UseVisualStyleBackColor = true;
             // 
             // Frm_ABM_Rubros
             // 
@@ -285,5 +300,6 @@ namespace CLASE05.Formularios.Rubros
         private System.Windows.Forms.RadioButton rb_id_Rubro;
         private System.Windows.Forms.RadioButton rb_n_Rubro;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.RadioButton rb_todos;
     }
 }

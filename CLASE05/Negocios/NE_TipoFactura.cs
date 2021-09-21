@@ -57,13 +57,39 @@ namespace CLASE05.Negocios
 
             return _BD.EjecutarSelect(sql);
         }
-        public DataTable BuscarTipoFactura(string id_tipo_factura)
-        {
-            string sql = @"SELECT id_tipo_factura, nombre
-                          FROM tipo_factura WHERE id_tipo_factura = " + id_tipo_factura;
 
+        public DataTable Recuperar_x_Patron(string patron)
+        {
+            string sql = @"SELECT * "
+                     + " FROM tipo_factura "
+                     + " WHERE nombre like '%" + patron.Trim() + "%'";
+            
+            return _BD.EjecutarSelect(sql);
+
+        }
+
+        public DataTable Recuperar_x_Id(string id)
+        {
+            string sql = @"SELECT * FROM tipo_factura WHERE id_tipo_factura = " + id;
             return _BD.EjecutarSelect(sql);
         }
+
+        public DataTable consultar_tipo_factura()
+        {
+            string sql = "SELECT id_tipo_factura, descripcion_tipo_factura FROM tipo_factura";
+
+            DataTable Resultado = new DataTable();
+            Resultado = _BD.EjecutarSelect(sql);
+            return Resultado;
+        }
+
+        public DataTable Recuperar_Todos()
+        {
+            string sql = @"SELECT * FROM tipo_factura";
+            return _BD.EjecutarSelect(sql);
+        }
+
+
         public DataTable RecuperarTipoFactura(string id_tipo_factura)
         {
             string sql = @"SELECT * 

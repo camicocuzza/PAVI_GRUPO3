@@ -30,7 +30,7 @@ namespace CLASE05.Formularios.TipoFactura
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_TipoFactura = new CLASE05.Clases.Grid01();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_blan_patron = new System.Windows.Forms.Button();
@@ -41,12 +41,14 @@ namespace CLASE05.Formularios.TipoFactura
             this.txt_id_TipoFactura = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.rb_todos = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_TipoFactura)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rb_todos);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_id_TipoFactura);
             this.groupBox1.Controls.Add(this.rb_id_TipoFactura);
@@ -64,6 +66,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.groupBox1.Controls.SetChildIndex(this.rb_id_TipoFactura, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_id_TipoFactura, 0);
             this.groupBox1.Controls.SetChildIndex(this.label3, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_todos, 0);
             // 
             // btn_buscar
             // 
@@ -133,8 +136,8 @@ namespace CLASE05.Formularios.TipoFactura
             this.grid_TipoFactura._tamannoLetraHeader = 9;
             this.grid_TipoFactura.AllowUserToAddRows = false;
             this.grid_TipoFactura.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_TipoFactura.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_TipoFactura.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_TipoFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -180,9 +183,9 @@ namespace CLASE05.Formularios.TipoFactura
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 17);
+            this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Patrón de Búsqueda";
+            this.label2.Text = "Nombre";
             // 
             // txt_patron
             // 
@@ -214,7 +217,7 @@ namespace CLASE05.Formularios.TipoFactura
             // 
             this.rb_id_TipoFactura.AutoSize = true;
             this.rb_id_TipoFactura.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_TipoFactura.Location = new System.Drawing.Point(357, 66);
+            this.rb_id_TipoFactura.Location = new System.Drawing.Point(357, 56);
             this.rb_id_TipoFactura.Name = "rb_id_TipoFactura";
             this.rb_id_TipoFactura.Size = new System.Drawing.Size(138, 21);
             this.rb_id_TipoFactura.TabIndex = 30;
@@ -245,6 +248,19 @@ namespace CLASE05.Formularios.TipoFactura
             this.label3.Size = new System.Drawing.Size(120, 17);
             this.label3.TabIndex = 32;
             this.label3.Text = "ID Tipo de Factura";
+            // 
+            // rb_todos
+            // 
+            this.rb_todos.AutoSize = true;
+            this.rb_todos.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_todos.Location = new System.Drawing.Point(357, 77);
+            this.rb_todos.Name = "rb_todos";
+            this.rb_todos.Size = new System.Drawing.Size(58, 21);
+            this.rb_todos.TabIndex = 33;
+            this.rb_todos.TabStop = true;
+            this.rb_todos.Text = "Todo";
+            this.rb_todos.UseVisualStyleBackColor = true;
+            this.rb_todos.CheckedChanged += new System.EventHandler(this.rb_todos_CheckedChanged);
             // 
             // Frm_ABM_TipoFactura
             // 
@@ -289,5 +305,6 @@ namespace CLASE05.Formularios.TipoFactura
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox txt_id_TipoFactura;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.RadioButton rb_todos;
     }
 }

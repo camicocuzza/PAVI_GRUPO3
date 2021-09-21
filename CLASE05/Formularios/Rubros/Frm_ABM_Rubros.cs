@@ -24,32 +24,43 @@ namespace CLASE05.Formularios.Rubros
         }
 
         ///BOTON DE BUSQUEDA
+
         private void btn_buscar_Click(object sender, EventArgs e)
         {
+            BuscarDatosRubros();
+        }
+
+        private void BuscarDatosRubros()
+        {
             NE_Rubros usu = new NE_Rubros();
-
-            string columna = "";
-
-            if (txt_patron.Text != string.Empty)
+            DataTable tabla = new DataTable();
+            if (rb_n_Rubro.Checked == true)
             {
-                if (rb_n_Rubro.Checked == true)
-                    columna = rb_n_Rubro.Text;
-
-                grid_Rubros.Cargar(usu.BuscarRubro(txt_patron.Text, columna));
+                grid_Rubros.Cargar(usu.Recuperar_x_Patron(txt_patron.Text));
                 if (grid_Rubros.Rows.Count == 0)
-                    MessageBox.Show("No se encontró ningún Rubro", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No se encontró ningún Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+
+            }
+            if (rb_id_Rubro.Checked == true)
+            {
+                grid_Rubros.Cargar(usu.Recuperar_x_Id(txt_id_Rubro.Text));
+                if (grid_Rubros.Rows.Count == 0)
+                    MessageBox.Show("No se encontró ningún Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txt_id_Rubro.Text != string.Empty)
+
+            if (rb_todos.Checked == true)
             {
-                grid_Rubros.Cargar(usu.BuscarRubro(txt_id_Rubro.Text));
-                if (grid_Rubros.Rows.Count == 0)
-                    MessageBox.Show("No se encontró ningún Rubro", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tabla = usu.Recuperar_Todos();
+                grid_Rubros.Cargar(tabla);
                 return;
             }
             MessageBox.Show("No hay parámetros de búsqueda", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+
         }
+
 
         //CONSULTA
         private void btn_consultar_Click(object sender, EventArgs e)

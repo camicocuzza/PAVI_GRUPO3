@@ -26,31 +26,38 @@ namespace CLASE05.Formularios.TipoFactura
         ///BOTON DE BUSQUEDA
         private void btn_buscar_Click(object sender, EventArgs e)
         {
+            BuscarDatosTipoFactura();
+        }
 
+        private void BuscarDatosTipoFactura()
+        {
             NE_TipoFactura usu = new NE_TipoFactura();
-
-            string columna = "";
-
-            if (txt_patron.Text != string.Empty)
+            DataTable tabla = new DataTable();
+            if (rb_n_TipoFactura.Checked == true)
             {
-                if (rb_n_TipoFactura.Checked == true)
-                    columna = rb_n_TipoFactura.Text;
+                grid_TipoFactura.Cargar(usu.Recuperar_x_Patron(txt_patron.Text));
+                if (grid_TipoFactura.Rows.Count == 0)
+                    MessageBox.Show("No se encontró ningún Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
 
-                grid_TipoFactura.Cargar(usu.BuscarTipoFactura(txt_patron.Text, columna));
+            }
+            if (rb_id_TipoFactura.Checked == true)
+            {
+                grid_TipoFactura.Cargar(usu.Recuperar_x_Id(txt_id_TipoFactura.Text));
                 if (grid_TipoFactura.Rows.Count == 0)
                     MessageBox.Show("No se encontró ningún Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txt_id_TipoFactura.Text != string.Empty)
+
+            if (rb_todos.Checked == true)
             {
-                grid_TipoFactura.Cargar(usu.BuscarTipoFactura(txt_id_TipoFactura.Text));
-                if (grid_TipoFactura.Rows.Count == 0)
-                    MessageBox.Show("No se encontró ningúna Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                tabla = usu.Recuperar_Todos();
+                grid_TipoFactura.Cargar(tabla);
                 return;
             }
             MessageBox.Show("No hay parámetros de búsqueda", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-            // btn_buscar.Enabled = false;
 
         }
 
@@ -74,6 +81,8 @@ namespace CLASE05.Formularios.TipoFactura
                 MessageBox.Show("Falta seleccionar un Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
+
+
             
             Frm_Modificacion_TipoFactura frm_modificacion = new Frm_Modificacion_TipoFactura();
             frm_modificacion.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
@@ -131,22 +140,16 @@ namespace CLASE05.Formularios.TipoFactura
 
         private void rb_n_TipoFactura_CheckedChanged(object sender, EventArgs e)
         {
-            if (rb_n_TipoFactura.Checked == true)
-            {
-                txt_id_TipoFactura.Enabled = false;
-                txt_patron.Clear();
-                txt_patron.Enabled = true;
-            }
+            txt_id_TipoFactura.Enabled = false;
+            txt_patron.Enabled = true;
+            txt_id_TipoFactura.Clear();
         }
 
         private void rb_id_TipoFactura_CheckedChanged(object sender, EventArgs e)
         {
-            if (rb_id_TipoFactura.Checked == true)
-            {
-                txt_patron.Enabled = false;
-                txt_id_TipoFactura.Clear();
-                txt_id_TipoFactura.Enabled = true;
-            }
+            txt_patron.Enabled = false;
+            txt_id_TipoFactura.Enabled = true;
+            txt_patron.Clear();
         }
 
         private void txt_patron_Click(object sender, EventArgs e)
@@ -157,6 +160,15 @@ namespace CLASE05.Formularios.TipoFactura
         private void txt_id_TipoFactura_Click(object sender, EventArgs e)
         {
             txt_id_TipoFactura.SelectionStart = txt_id_TipoFactura.Text.Length;
+
+        }
+
+        private void rb_todos_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_patron.Enabled = false;
+            txt_id_TipoFactura.Enabled = false;
+            txt_patron.Clear();
+            txt_id_TipoFactura.Clear();
 
         }
     }

@@ -50,6 +50,37 @@ namespace CLASE05.Negocios
                 return 0;
         }
 
+        public DataTable Recuperar_x_Patron(string patron)
+        {
+            string sql = @"SELECT * "
+                     + " FROM rubro "
+                     + " WHERE nombre like '%" + patron.Trim() + "%'";
+
+            return _BD.EjecutarSelect(sql);
+
+        }
+
+        public DataTable Recuperar_x_Id(string id)
+        {
+            string sql = @"SELECT * FROM rubro WHERE id_rubro = " + id;
+            return _BD.EjecutarSelect(sql);
+        }
+
+        public DataTable consultar_tipo_factura()
+        {
+            string sql = "SELECT id_rubro, nombre FROM rubro";
+
+            DataTable Resultado = new DataTable();
+            Resultado = _BD.EjecutarSelect(sql);
+            return Resultado;
+        }
+
+        public DataTable Recuperar_Todos()
+        {
+            string sql = @"SELECT * FROM rubro";
+            return _BD.EjecutarSelect(sql);
+        }
+
         public DataTable BuscarRubro(string patron, string columna)
         {
             string sql = @"SELECT id_rubro, nombre
@@ -76,7 +107,8 @@ namespace CLASE05.Negocios
         {
             string sqlInsert = "";
 
-            sqlInsert = @"INSERT INTO rurbo (nombre) VALUES (";
+
+            sqlInsert = @"INSERT INTO rubro (nombre) VALUES (";
             sqlInsert += "'" + nombre + "')";
 
             //MessageBox.Show(sqlInsert);

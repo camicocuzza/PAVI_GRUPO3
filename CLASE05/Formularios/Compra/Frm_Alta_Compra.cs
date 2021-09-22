@@ -14,6 +14,8 @@ namespace CLASE05.Formularios.Compra
 {
     public partial class Frm_Alta_Compra : CLASE05.Formularios.FrmBASE.FrmBase
     {
+        TratamientosEspeciales _TE = new TratamientosEspeciales();
+
         public Frm_Alta_Compra()
         {
             InitializeComponent();
@@ -21,40 +23,42 @@ namespace CLASE05.Formularios.Compra
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            //N1  validar los datos del formulario
-            //N1 la validacion de todo ok => realizo validación especifica
-            //----N2 -------si la validacion especifica da ok => grabo
-            //----N2 -------la validacion especifica da error => ir a corregir el error
-            //N1 si validacion da error => ir a corregir el error
-            TratamientosEspeciales _TE = new TratamientosEspeciales();
+            NE_Compra Facturaa = new NE_Compra();
 
-            if (_TE.Validar(this.Controls) == TratamientosEspeciales.RespuestaValidacion.Correcta)
-            {
-                // VALIDACION ESPECIFICA
-                //if (_TE.ValidarEmail(txt_email._Text) == TratamientosEspeciales.RespuestaValidacion.Error)
-                //{
-                //    MessageBox.Show("El formato de correo es invalido");
-                //    txt_email.Focus();
-                //    return;
-                //}
-                // GRABAR NUEVO REGISTRO
-                NE_Compra usu = new NE_Compra();
+            Facturaa.num_compra = txt_id_compra._Text;
+            Facturaa.cuit_proveedor = txt_n_compra._Text;
+            //Facturaa.fecha = txt_fecha._Text;
+            Facturaa.monto_total = monto_compra._Text;
+            Facturaa.Insertar();
+            this.Close();
 
+            
+            MessageBox.Show("Se grabó correctamente", "Importante");
 
-                
-                usu.cuit_proveedor = txt_n_compra._Text;
-                usu.fecha = txt_fecha._Text;
-                usu.monto_total = monto_compra._Text;
+            //if (_TE.Validar(this.Controls) == TratamientosEspeciales.RespuestaValidacion.Correcta)
+            //{
+            //    NE_Compra usu = new NE_Compra();
 
-                usu.Insertar();
-                MessageBox.Show("Se grabó correctamente", "Importante");
-                this.Dispose();
-            }
+            //    usu.cuit_proveedor = txt_n_compra._Text;
+            //    usu.fecha = txt_fecha._Text;
+            //    usu.monto_total = monto_compra._Text;
+
+            //    usu.Insertar();
+            //    MessageBox.Show("Se grabó correctamente", "Importante");
+            //    this.Dispose();
+            //}
         }
 
         private void Frm_Alta_Compra_Load(object sender, EventArgs e)
         {
             this.monto_compra.Focus();
+            txt_fecha.Enabled = false;
+            txt_fecha._Text = _TE.RecuperarFecha();
+        }
+
+        private void txt_fecha_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

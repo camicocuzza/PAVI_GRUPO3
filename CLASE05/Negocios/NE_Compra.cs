@@ -8,7 +8,7 @@ using System.Data;
 using System.Windows.Forms;
 
 namespace CLASE05.Negocios
-{
+{   
     class NE_Compra
     {
         public enum Validacion { correcta, incorrecta }
@@ -101,17 +101,27 @@ namespace CLASE05.Negocios
 
         public void Insertar()
         {
-            string sqlInsert = "";
+            //string sqlInsert = "";
 
 
-            sqlInsert = @"INSERT INTO compra (cui_proveedor, fecha, monto_total) VALUES (";
-            sqlInsert += "'" + cuit_proveedor + "'";
-            sqlInsert += "'insert datetime sql'" + fecha + "'";
-            sqlInsert += "'" + monto_total + "')";
+            //sqlInsert = @"INSERT INTO compra (cui_proveedor, fecha, monto_total) VALUES (";
+            //sqlInsert += "'" + cuit_proveedor + "'";
+            //sqlInsert += "'" + fecha + "'";
+            //sqlInsert += "'" + monto_total + "')";
+
+            string sqlInsert = @"INSERT INTO compra (cuit_proveedor, monto_total)
+                                    VALUES("
+                                    + cuit_proveedor.ToString()
+                                    + "," + monto_total.ToString()
+                                    + //", CONVERT(DATE,'" + fecha + "', 103)" +
+                                    " )";
 
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
+
         }
+
+
         public void Modificar()
         {
             string sqlUpdate = "";

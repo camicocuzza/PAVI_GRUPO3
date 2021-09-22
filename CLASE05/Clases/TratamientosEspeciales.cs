@@ -75,5 +75,11 @@ namespace CLASE05.Clases
             }
         }
 
+        public string RecuperarFecha()
+        {
+            BE_Acceso_Datos _BD = new BE_Acceso_Datos();
+            return _BD.EjecutarSelect("select convert(char(10),getdate(),103)").Rows[0][0].ToString();
+        }
+
     }
 }

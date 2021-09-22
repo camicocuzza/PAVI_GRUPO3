@@ -30,12 +30,12 @@ namespace CLASE05.Formularios.Compra
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.monto_compra = new CLASE05.Clases.LabelText02();
+            this.txt_fecha = new CLASE05.Clases.LabelText02();
             this.txt_id_compra = new CLASE05.Clases.LabelText02();
             this.txt_n_compra = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.txt_fecha = new CLASE05.Clases.LabelText02();
-            this.monto_compra = new CLASE05.Clases.LabelText02();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,53 @@ namespace CLASE05.Formularios.Compra
             this.panel1.Size = new System.Drawing.Size(410, 288);
             this.panel1.TabIndex = 32;
             // 
+            // monto_compra
+            // 
+            this.monto_compra._Ancho = 30;
+            this.monto_compra._Decimales = 0;
+            this.monto_compra._Etiqueta = "Monto Total";
+            this.monto_compra._Mask = "999999999999999999999999999999";
+            this.monto_compra._MensajeError = "El monto de la compra está vácio";
+            this.monto_compra._Nombre_campo = "monto_compra";
+            this.monto_compra._Nombre_tabla = null;
+            this.monto_compra._ReadOnly = false;
+            this.monto_compra._Text = "";
+            this.monto_compra._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.monto_compra._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.monto_compra._Validable = true;
+            this.monto_compra.BackColor = System.Drawing.Color.Transparent;
+            this.monto_compra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monto_compra.ForeColor = System.Drawing.Color.Gainsboro;
+            this.monto_compra.Location = new System.Drawing.Point(0, 159);
+            this.monto_compra.Margin = new System.Windows.Forms.Padding(4);
+            this.monto_compra.Name = "monto_compra";
+            this.monto_compra.Size = new System.Drawing.Size(353, 53);
+            this.monto_compra.TabIndex = 24;
+            // 
+            // txt_fecha
+            // 
+            this.txt_fecha._Ancho = 30;
+            this.txt_fecha._Decimales = 2;
+            this.txt_fecha._Etiqueta = "fecha";
+            this.txt_fecha._Mask = "00/00/0000";
+            this.txt_fecha._MensajeError = "la fecha está vácia";
+            this.txt_fecha._Nombre_campo = "fecha_compra";
+            this.txt_fecha._Nombre_tabla = null;
+            this.txt_fecha._ReadOnly = false;
+            this.txt_fecha._Text = "  /  /";
+            this.txt_fecha._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_fecha._TipoDato = CLASE05.Clases.LabelText02.TipoDato.fecha;
+            this.txt_fecha._Validable = true;
+            this.txt_fecha.BackColor = System.Drawing.Color.Transparent;
+            this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_fecha.Location = new System.Drawing.Point(0, 119);
+            this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_fecha.Name = "txt_fecha";
+            this.txt_fecha.Size = new System.Drawing.Size(353, 53);
+            this.txt_fecha.TabIndex = 23;
+            this.txt_fecha.Load += new System.EventHandler(this.txt_fecha_Load);
+            // 
             // txt_id_compra
             // 
             this.txt_id_compra._Ancho = 2;
@@ -97,12 +144,12 @@ namespace CLASE05.Formularios.Compra
             this.txt_n_compra._Ancho = 30;
             this.txt_n_compra._Decimales = 0;
             this.txt_n_compra._Etiqueta = "Cuit de Provedor";
-            this.txt_n_compra._Mask = "999999999999999999999999999.99";
+            this.txt_n_compra._Mask = "999999999999999999999999999999";
             this.txt_n_compra._MensajeError = "El CUIT de la compra está vácia";
             this.txt_n_compra._Nombre_campo = "n_compra";
             this.txt_n_compra._Nombre_tabla = null;
             this.txt_n_compra._ReadOnly = false;
-            this.txt_n_compra._Text = "                           .";
+            this.txt_n_compra._Text = "";
             this.txt_n_compra._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.txt_n_compra._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
             this.txt_n_compra._Validable = true;
@@ -139,52 +186,6 @@ namespace CLASE05.Formularios.Compra
             this.lbl_titulo.TabIndex = 31;
             this.lbl_titulo.Text = "Altas de Compra";
             // 
-            // txt_fecha
-            // 
-            this.txt_fecha._Ancho = 30;
-            this.txt_fecha._Decimales = 2;
-            this.txt_fecha._Etiqueta = "fecha";
-            this.txt_fecha._Mask = "00/00/0000";
-            this.txt_fecha._MensajeError = "la fecha está vácia";
-            this.txt_fecha._Nombre_campo = "fecha_compra";
-            this.txt_fecha._Nombre_tabla = null;
-            this.txt_fecha._ReadOnly = false;
-            this.txt_fecha._Text = "  /  /";
-            this.txt_fecha._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_fecha._TipoDato = CLASE05.Clases.LabelText02.TipoDato.fecha;
-            this.txt_fecha._Validable = true;
-            this.txt_fecha.BackColor = System.Drawing.Color.Transparent;
-            this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_fecha.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_fecha.Location = new System.Drawing.Point(0, 119);
-            this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(353, 53);
-            this.txt_fecha.TabIndex = 23;
-            // 
-            // monto_compra
-            // 
-            this.monto_compra._Ancho = 30;
-            this.monto_compra._Decimales = 0;
-            this.monto_compra._Etiqueta = "Monto Total";
-            this.monto_compra._Mask = "999999999999999999999999999999";
-            this.monto_compra._MensajeError = "El monto de la compra está vácio";
-            this.monto_compra._Nombre_campo = "monto_compra";
-            this.monto_compra._Nombre_tabla = null;
-            this.monto_compra._ReadOnly = false;
-            this.monto_compra._Text = "";
-            this.monto_compra._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.monto_compra._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
-            this.monto_compra._Validable = true;
-            this.monto_compra.BackColor = System.Drawing.Color.Transparent;
-            this.monto_compra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monto_compra.ForeColor = System.Drawing.Color.Gainsboro;
-            this.monto_compra.Location = new System.Drawing.Point(0, 159);
-            this.monto_compra.Margin = new System.Windows.Forms.Padding(4);
-            this.monto_compra.Name = "monto_compra";
-            this.monto_compra.Size = new System.Drawing.Size(353, 53);
-            this.monto_compra.TabIndex = 24;
-            // 
             // Frm_Alta_Compra
             // 
             this._PosiciónVisible = true;
@@ -213,10 +214,10 @@ namespace CLASE05.Formularios.Compra
 
         public System.Windows.Forms.Panel panel1;
         public Clases.LabelText02 monto_compra;
-        public Clases.LabelText02 txt_fecha;
         public Clases.LabelText02 txt_id_compra;
         public Clases.LabelText02 txt_n_compra;
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
+        public Clases.LabelText02 txt_fecha;
     }
 }

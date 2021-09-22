@@ -21,6 +21,8 @@ namespace CLASE05.Formularios.Compra
         private void Frm_ABM_Compra_Load(object sender, EventArgs e)
         {
             this.grid_Compra.Formatear("Numero de Compra, 100, I; CUIT Proveedor, 200, I; Fecha, 100, I; Monto TOTAl, 100, I");
+            btn_modificar.Enabled = false;
+
         }
 
         ///BOTON DE BUSQUEDA
@@ -85,23 +87,6 @@ namespace CLASE05.Formularios.Compra
             frm_alta.ShowDialog();
         }
 
-        //MODIFICACION
-        private void btn_modificar_Click(object sender, EventArgs e)
-        {
-            if (grid_Compra.Rows.Count == 0)
-            {
-                MessageBox.Show("Falta buscar una Compra", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-            if (grid_Compra.CurrentCell.RowIndex == -1)
-            {
-                MessageBox.Show("Falta seleccionar una Compra", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-            Frm_Modificacion_Compra frm_modificacion = new Frm_Modificacion_Compra();
-            frm_modificacion.id_compra = grid_Compra.CurrentRow.Cells[0].Value.ToString();
-            frm_modificacion.ShowDialog();
-        }
 
         //BAJA
         private void btn_borrar_Click(object sender, EventArgs e)
@@ -161,7 +146,17 @@ namespace CLASE05.Formularios.Compra
         {
             txt_id_Compra.SelectionStart = txt_id_Compra.Text.Length;
         }
-           
 
+        private void grid_Compra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id_compra = grid_Compra.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void grid_Compra_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frm_Consulta_Compra frm_consulta = new Frm_Consulta_Compra();
+            frm_consulta.id_compra = grid_Compra.CurrentRow.Cells[0].Value.ToString();
+            frm_consulta.ShowDialog();
+        }
     }
 }

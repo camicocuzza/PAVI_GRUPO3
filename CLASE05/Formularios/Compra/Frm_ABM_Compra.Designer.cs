@@ -29,42 +29,42 @@ namespace CLASE05.Formularios.Compra
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_Compra = new CLASE05.Clases.Grid01();
             this.rb_todos = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_id_Compra = new System.Windows.Forms.MaskedTextBox();
             this.rb_id_Compra = new System.Windows.Forms.RadioButton();
-            this.rb_n_Compra = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_blan_patron = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_date = new System.Windows.Forms.MaskedTextBox();
+            this.rb_n_Compra = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Compra)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rb_n_Compra);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.rb_todos);
+            this.groupBox1.Controls.Add(this.txt_date);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_id_Compra);
             this.groupBox1.Controls.Add(this.rb_id_Compra);
-            this.groupBox1.Controls.Add(this.rb_n_Compra);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btn_blan_patron);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txt_date);
-            this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
-            this.groupBox1.Controls.SetChildIndex(this.txt_date, 0);
-            this.groupBox1.Controls.SetChildIndex(this.label2, 0);
             this.groupBox1.Controls.SetChildIndex(this.btn_blan_patron, 0);
             this.groupBox1.Controls.SetChildIndex(this.label4, 0);
-            this.groupBox1.Controls.SetChildIndex(this.rb_n_Compra, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_id_Compra, 0);
             this.groupBox1.Controls.SetChildIndex(this.txt_id_Compra, 0);
             this.groupBox1.Controls.SetChildIndex(this.label3, 0);
+            this.groupBox1.Controls.SetChildIndex(this.txt_date, 0);
             this.groupBox1.Controls.SetChildIndex(this.rb_todos, 0);
+            this.groupBox1.Controls.SetChildIndex(this.label2, 0);
+            this.groupBox1.Controls.SetChildIndex(this.btn_buscar, 0);
+            this.groupBox1.Controls.SetChildIndex(this.rb_n_Compra, 0);
             // 
             // btn_buscar
             // 
@@ -76,6 +76,7 @@ namespace CLASE05.Formularios.Compra
             this.btn_alta.FlatAppearance.BorderSize = 0;
             this.btn_alta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_alta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_alta.Location = new System.Drawing.Point(554, 390);
             this.btn_alta.Click += new System.EventHandler(this.btn_alta_Click);
             // 
             // btn_modificar
@@ -84,7 +85,8 @@ namespace CLASE05.Formularios.Compra
             this.btn_modificar.FlatAppearance.BorderSize = 0;
             this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            this.btn_modificar.Location = new System.Drawing.Point(449, 392);
+            this.btn_modificar.Visible = false;
             // 
             // btn_borrar
             // 
@@ -105,6 +107,8 @@ namespace CLASE05.Formularios.Compra
             this.btn_consultar.FlatAppearance.BorderSize = 0;
             this.btn_consultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_consultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.Location = new System.Drawing.Point(501, 390);
+            this.btn_consultar.Visible = false;
             this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
             // btn_cerrar
@@ -125,8 +129,8 @@ namespace CLASE05.Formularios.Compra
             this.grid_Compra._tamannoLetraHeader = 9;
             this.grid_Compra.AllowUserToAddRows = false;
             this.grid_Compra.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_Compra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_Compra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_Compra.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_Compra.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_Compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -135,12 +139,13 @@ namespace CLASE05.Formularios.Compra
             this.grid_Compra.ReadOnly = true;
             this.grid_Compra.Size = new System.Drawing.Size(645, 184);
             this.grid_Compra.TabIndex = 10;
+            this.grid_Compra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_Compra_CellContentClick);
             // 
             // rb_todos
             // 
             this.rb_todos.AutoSize = true;
             this.rb_todos.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_todos.Location = new System.Drawing.Point(356, 78);
+            this.rb_todos.Location = new System.Drawing.Point(353, 72);
             this.rb_todos.Name = "rb_todos";
             this.rb_todos.Size = new System.Drawing.Size(58, 21);
             this.rb_todos.TabIndex = 46;
@@ -153,7 +158,7 @@ namespace CLASE05.Formularios.Compra
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(72, 66);
+            this.label3.Location = new System.Drawing.Point(92, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 17);
             this.label3.TabIndex = 45;
@@ -165,7 +170,7 @@ namespace CLASE05.Formularios.Compra
             this.txt_id_Compra.Enabled = false;
             this.txt_id_Compra.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_Compra.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.txt_id_Compra.Location = new System.Drawing.Point(141, 63);
+            this.txt_id_Compra.Location = new System.Drawing.Point(161, 62);
             this.txt_id_Compra.Mask = "99999";
             this.txt_id_Compra.Name = "txt_id_Compra";
             this.txt_id_Compra.Size = new System.Drawing.Size(48, 25);
@@ -176,7 +181,7 @@ namespace CLASE05.Formularios.Compra
             // 
             this.rb_id_Compra.AutoSize = true;
             this.rb_id_Compra.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_Compra.Location = new System.Drawing.Point(356, 56);
+            this.rb_id_Compra.Location = new System.Drawing.Point(353, 50);
             this.rb_id_Compra.Name = "rb_id_Compra";
             this.rb_id_Compra.Size = new System.Drawing.Size(145, 21);
             this.rb_id_Compra.TabIndex = 43;
@@ -184,19 +189,6 @@ namespace CLASE05.Formularios.Compra
             this.rb_id_Compra.Text = "Numero de compra";
             this.rb_id_Compra.UseVisualStyleBackColor = true;
             this.rb_id_Compra.CheckedChanged += new System.EventHandler(this.rb_id_Compra_CheckedChanged);
-            // 
-            // rb_n_Compra
-            // 
-            this.rb_n_Compra.AutoSize = true;
-            this.rb_n_Compra.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_Compra.Location = new System.Drawing.Point(356, 33);
-            this.rb_n_Compra.Name = "rb_n_Compra";
-            this.rb_n_Compra.Size = new System.Drawing.Size(130, 21);
-            this.rb_n_Compra.TabIndex = 42;
-            this.rb_n_Compra.TabStop = true;
-            this.rb_n_Compra.Text = "Fecha de compra";
-            this.rb_n_Compra.UseVisualStyleBackColor = true;
-            this.rb_n_Compra.CheckedChanged += new System.EventHandler(this.rb_n_Compra_CheckedChanged);
             // 
             // label4
             // 
@@ -231,11 +223,11 @@ namespace CLASE05.Formularios.Compra
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 36);
+            this.label2.Location = new System.Drawing.Point(25, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 17);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Patrón de Búsqueda";
+            this.label2.Size = new System.Drawing.Size(107, 17);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Buscar por CUIT";
             // 
             // txt_date
             // 
@@ -243,13 +235,24 @@ namespace CLASE05.Formularios.Compra
             this.txt_date.Enabled = false;
             this.txt_date.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_date.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_date.Location = new System.Drawing.Point(141, 28);
-            this.txt_date.Mask = "00/00/0000";
+            this.txt_date.Location = new System.Drawing.Point(161, 31);
+            this.txt_date.Mask = "LLLLLLLLLLLLLLLLLLLL";
             this.txt_date.Name = "txt_date";
             this.txt_date.Size = new System.Drawing.Size(129, 25);
-            this.txt_date.TabIndex = 38;
-            this.txt_date.ValidatingType = typeof(System.DateTime);            
-            //
+            this.txt_date.TabIndex = 31;
+            // 
+            // rb_n_Compra
+            // 
+            this.rb_n_Compra.AutoSize = true;
+            this.rb_n_Compra.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
+            this.rb_n_Compra.Location = new System.Drawing.Point(353, 27);
+            this.rb_n_Compra.Name = "rb_n_Compra";
+            this.rb_n_Compra.Size = new System.Drawing.Size(129, 21);
+            this.rb_n_Compra.TabIndex = 47;
+            this.rb_n_Compra.TabStop = true;
+            this.rb_n_Compra.Text = "Numero de CUIT";
+            this.rb_n_Compra.UseVisualStyleBackColor = true;
+            // 
             // Frm_ABM_Compra
             // 
             this._PosiciónVisible = true;
@@ -262,17 +265,17 @@ namespace CLASE05.Formularios.Compra
             this.Name = "Frm_ABM_Compra";
             this.Text = "Frm_ABM_Compra";
             this.Load += new System.EventHandler(this.Frm_ABM_Compra_Load);
+            this.Controls.SetChildIndex(this.btn_consultar, 0);
+            this.Controls.SetChildIndex(this.grid_Compra, 0);
+            this.Controls.SetChildIndex(this.btn_modificar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.btn_alta, 0);
-            this.Controls.SetChildIndex(this.btn_modificar, 0);
             this.Controls.SetChildIndex(this.btn_borrar, 0);
-            this.Controls.SetChildIndex(this.btn_consultar, 0);
             this.Controls.SetChildIndex(this.lbl_posicion, 0);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.grid_Compra, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Compra)).EndInit();
@@ -288,9 +291,9 @@ namespace CLASE05.Formularios.Compra
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox txt_id_Compra;
         private System.Windows.Forms.RadioButton rb_id_Compra;
-        private System.Windows.Forms.RadioButton rb_n_Compra;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_blan_patron;
+        private System.Windows.Forms.RadioButton rb_n_Compra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox txt_date;
     }

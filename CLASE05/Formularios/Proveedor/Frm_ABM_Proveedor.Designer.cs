@@ -37,9 +37,9 @@ namespace CLASE05.Formularios.Proveedor
             this.rb_id_domicilio = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_patron = new System.Windows.Forms.MaskedTextBox();
-            this.grid_consulta = new System.Windows.Forms.DataGridView();
+            this.grid_consulta_proveedor = new CLASE05.Clases.Grid01();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta_proveedor)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -218,13 +218,15 @@ namespace CLASE05.Formularios.Proveedor
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 22;
             // 
-            // grid_consulta
+            // grid_consulta_proveedor
             // 
-            this.grid_consulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_consulta.Location = new System.Drawing.Point(12, 243);
-            this.grid_consulta.Name = "grid_consulta";
-            this.grid_consulta.Size = new System.Drawing.Size(647, 154);
-            this.grid_consulta.TabIndex = 7;
+            this.grid_consulta_proveedor._formatoLetraHeader = System.Drawing.FontStyle.Regular;
+            this.grid_consulta_proveedor._tamannoLetraHeader = 9;
+            this.grid_consulta_proveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_consulta_proveedor.Location = new System.Drawing.Point(12, 243);
+            this.grid_consulta_proveedor.Name = "grid_consulta_proveedor";
+            this.grid_consulta_proveedor.Size = new System.Drawing.Size(645, 150);
+            this.grid_consulta_proveedor.TabIndex = 6;
             // 
             // Frm_ABM_Proveedor
             // 
@@ -233,10 +235,11 @@ namespace CLASE05.Formularios.Proveedor
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 521);
-            this.Controls.Add(this.grid_consulta);
+            this.Controls.Add(this.grid_consulta_proveedor);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Frm_ABM_Proveedor";
             this.Text = "Frm_ABM_Proveedor";
+            this.Load += new System.EventHandler(this.Frm_ABM_Proveedor_Load);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.btn_alta, 0);
@@ -247,10 +250,10 @@ namespace CLASE05.Formularios.Proveedor
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.grid_consulta, 0);
+            this.Controls.SetChildIndex(this.grid_consulta_proveedor, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_consulta_proveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +269,6 @@ namespace CLASE05.Formularios.Proveedor
         private System.Windows.Forms.RadioButton rb_razon_social;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox txt_patron;
-        private System.Windows.Forms.DataGridView grid_consulta;
+        private Clases.Grid01 grid_consulta_proveedor;
     }
 }

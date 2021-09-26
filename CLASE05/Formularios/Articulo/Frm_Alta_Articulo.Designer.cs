@@ -352,6 +352,7 @@ namespace CLASE05.Formularios.Articulo
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Frm_Alta_Articulo";
             this.Text = "Frm_Alta_Articulo";
+            this.Load += new System.EventHandler(this.Frm_Alta_Articulo_Load);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);

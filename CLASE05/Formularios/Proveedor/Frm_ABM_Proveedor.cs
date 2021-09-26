@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CLASE05.Negocios;
 
 namespace CLASE05.Formularios.Proveedor
 {
@@ -39,6 +40,12 @@ namespace CLASE05.Formularios.Proveedor
         {
             Frm_Baja_Proveedor frm_alta = new Frm_Baja_Proveedor();
             frm_alta.ShowDialog();
+        }
+
+        private void Frm_ABM_Proveedor_Load(object sender, EventArgs e)
+        {
+            this.grid_consulta_proveedor.Formatear("cuit_proveedor, 100, C; razon_social,100, I;" +
+                " fecha_inicio,12,I; direccion, 200,I;ciudad,200,I");        
         }
     }
 }

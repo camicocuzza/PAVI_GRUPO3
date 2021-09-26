@@ -31,6 +31,13 @@ namespace CLASE05.Formularios.FrmBASE
         {
             set { btn_maximizar.Visible = value; }
         }
+
+        //aca van los get-set
+        public string cod_articulo { get; set; }
+        public string num_lote { get; set; }
+        public string cuit_proveedor { get; set; }
+
+
         public FrmBase()
         {
             InitializeComponent();

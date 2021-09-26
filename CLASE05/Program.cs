@@ -24,8 +24,8 @@ namespace CLASE05
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Escritorio());
-            //Application.Run(new Frm_ABM_Articulo());
+            //Application.Run(new Frm_Escritorio());
+            Application.Run(new Frm_ABM_Articulo());
             //Application.Run(new Frm_ABM_EstadoProvincia());
             //Application.Run(new Frm_ABM_Lotes());
             //Application.Run(new Frm_ABM_Proveedor());

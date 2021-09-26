@@ -22,7 +22,7 @@ namespace CLASE05
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Frm_Escritorio());
+            Application.Run(new Frm_Escritorio());
             //Application.Run(new Frm_Login());
             //Application.Run(new FrmLogin());
             //Application.Run(new Frm_ABM_Usuario_Entrada());
@@ -30,7 +30,7 @@ namespace CLASE05
             //Application.Run(new Frm_Log());
             //Application.Run(new Frm_ABM_TipoFactura());
             //Application.Run(new Frm_ABM_Rubros());
-            Application.Run(new Frm_ABM_Compra());
+           //Application.Run(new Frm_ABM_Compra());
 
         }
     }

@@ -120,6 +120,7 @@ namespace CLASE05.Negocios
 
             sqlUpdate = "UPDATE rubro SET ";
             sqlUpdate += "nombre = '" + nombre + "'";
+            sqlUpdate += " WHERE id_rubro = " + id_rubro;
 
             _BD.Modificar(sqlUpdate);
         }

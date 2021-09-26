@@ -151,7 +151,13 @@ namespace CLASE05.Formularios.Usuarios
             txt_id_usuario.SelectionStart = txt_id_usuario.Text.Length;
         }
 
-        
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_patron.Enabled = false;
+            txt_id_usuario.Enabled = false;
+            txt_patron.Clear();
+            txt_id_usuario.Clear();
+        }
     }
 }
 

@@ -114,6 +114,7 @@ namespace CLASE05.Negocios
 
             sqlUpdate = "UPDATE tipo_factura SET ";
             sqlUpdate += "nombre = '" + nombre + "'";
+            sqlUpdate += " WHERE id_tipo_factura = " + id_tipo_factura;
 
             _BD.Modificar(sqlUpdate);
         }

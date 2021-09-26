@@ -30,6 +30,8 @@ namespace CLASE05.Formularios.Compra
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_n_compra2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.monto_compra = new CLASE05.Clases.LabelText02();
             this.txt_fecha = new CLASE05.Clases.LabelText02();
             this.txt_id_compra = new CLASE05.Clases.LabelText02();
@@ -58,6 +60,8 @@ namespace CLASE05.Formularios.Compra
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txt_n_compra2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.monto_compra);
             this.panel1.Controls.Add(this.txt_fecha);
             this.panel1.Controls.Add(this.txt_id_compra);
@@ -67,6 +71,26 @@ namespace CLASE05.Formularios.Compra
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 288);
             this.panel1.TabIndex = 32;
+            // 
+            // txt_n_compra2
+            // 
+            this.txt_n_compra2.Location = new System.Drawing.Point(151, 192);
+            this.txt_n_compra2.Name = "txt_n_compra2";
+            this.txt_n_compra2.Size = new System.Drawing.Size(100, 20);
+            this.txt_n_compra2.TabIndex = 26;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Location = new System.Drawing.Point(360, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 31);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // monto_compra
             // 
@@ -205,6 +229,7 @@ namespace CLASE05.Formularios.Compra
             this.Controls.SetChildIndex(this.lbl_titulo, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +244,7 @@ namespace CLASE05.Formularios.Compra
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
         public Clases.LabelText02 txt_fecha;
+        public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_n_compra2;
     }
 }

@@ -83,6 +83,13 @@ namespace CLASE05.Negocios
             return _BD.EjecutarSelect(sql);
         }
 
+
+        public DataTable ValidarProveedor(string patron)
+        {
+            string sql = @"SELECT * FROM proveedor WHERE cuit_proveedor LIKE '" + patron + "'";
+            return _BD.EjecutarSelect(sql);
+        }
+
         public DataTable BuscarCompra(string patron, string columna)
         {
             string sql = @"SELECT num_compra, fecha
@@ -101,22 +108,25 @@ namespace CLASE05.Negocios
 
         public void Insertar()
         {
-            //string sqlInsert = "";
+            string sqlInsert = "";
 
+            DateTime dt = DateTime.Parse(fecha);
 
-            //sqlInsert = @"INSERT INTO compra (cui_proveedor, fecha, monto_total) VALUES (";
-            //sqlInsert += "'" + cuit_proveedor + "'";
-            //sqlInsert += "'" + fecha + "'";
-            //sqlInsert += "'" + monto_total + "')";
+            sqlInsert = @"INSERT INTO compra (cuit_proveedor, fecha, monto_total) VALUES (";
+            sqlInsert += "'" + cuit_proveedor + "'";
+            sqlInsert += "'," + fecha + "'";
+            sqlInsert += "'," + monto_total + "')";
 
-            string sqlInsert = @"INSERT INTO compra (cuit_proveedor, monto_total)
-                                    VALUES("
-                                    + cuit_proveedor.ToString()
-                                    + "," + monto_total.ToString()
-                                    + //", CONVERT(DATE,'" + fecha + "', 103)" +
-                                    " )";
+            //sqlInsert = "INSERT INTO compra (cuit_proveedor, fecha, monto_total) VALUES (@cuit,@fecha,@monto)";
 
-            //MessageBox.Show(sqlInsert);
+            ////string sqlInsert = @"INSERT INTO compra (cuit_proveedor, monto_total)
+            ////                        VALUES('"
+            ////                        + cuit_proveedor.ToString()
+            ////                        + "," + monto_total.ToString()
+            ////                        + dt +
+            ////                        " )'";
+
+            ////MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
 
         }

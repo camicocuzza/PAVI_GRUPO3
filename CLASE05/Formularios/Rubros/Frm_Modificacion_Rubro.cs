@@ -23,7 +23,7 @@ namespace CLASE05.Formularios.Rubros
         private void Frm_Modificacion_Rubro_Load(object sender, EventArgs e)
         {
             NE_Rubros usu = new NE_Rubros();
-            CargarFormulario(usu.RecuperarRubro(id_rubro));
+            CargarFormulario(usu.RecuperarRubro(lb_id.Text));
         }
 
         private void CargarFormulario(DataTable tabla)
@@ -53,7 +53,7 @@ namespace CLASE05.Formularios.Rubros
 
                 usu.nombre = txt_n_Rubro_nuevo._Text;
 
-                usu.Modificar();
+                usu.Modificar(int.Parse(lb_id.Text));
                 MessageBox.Show("Se modificó correctamente el Nombre a: " + txt_n_Rubro_nuevo._Text, "Importante");
 
             }

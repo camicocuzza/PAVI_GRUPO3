@@ -18,7 +18,7 @@ namespace CLASE05.Formularios.Usuarios
 
         private void Frm_ABM_Usuario_Load(object sender, EventArgs e)
         {
-            this.grid_usuarios.Formatear("id, 75, C; n_usuario, 200, I");
+            this.grid_usuarios.Formatear("id, 75, C; n_usuario, 200, I;Password, 100, I");
         }
 
         private void btn_blan_patron_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace CLASE05.Formularios.Usuarios
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             NE_Usuarios usu = new NE_Usuarios();
-
+            DataTable tabla = new DataTable();
             string columna = "";
 
             if (txt_patron.Text != string.Empty)
@@ -55,10 +55,18 @@ namespace CLASE05.Formularios.Usuarios
                     MessageBox.Show("No se encontró ningún usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            if (radioButton1.Checked == true)
+            {
+                tabla = usu.Recuperar_Todos();
+                grid_usuarios.Cargar(tabla);
+                return;
+            }
+
             MessageBox.Show("No hay parámetros de búsqueda", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
            // btn_buscar.Enabled = false;
         }
+
 
         private void btn_alta_Click(object sender, EventArgs e)
         {

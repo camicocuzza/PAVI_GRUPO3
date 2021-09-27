@@ -93,7 +93,7 @@ namespace CLASE05.Negocios
         public DataTable RecuperarTipoFactura(string id_tipo_factura)
         {
             string sql = @"SELECT * 
-                          FROM tipo_factura WHERE id_tipo_factura = " + id_tipo_factura;
+                          FROM tipo_factura WHERE id_tipo_factura = '" + id_tipo_factura + "'";
 
             return _BD.EjecutarSelect(sql);
         }
@@ -108,13 +108,14 @@ namespace CLASE05.Negocios
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
         }
-        public void Modificar()
+        public void Modificar(int id)
         {
+
             string sqlUpdate = "";
 
             sqlUpdate = "UPDATE tipo_factura SET ";
-            sqlUpdate += "nombre = '" + nombre + "'";
-            sqlUpdate += " WHERE id_tipo_factura = " + id_tipo_factura;
+            sqlUpdate += " nombre = '" + nombre + "'";
+            sqlUpdate += " WHERE id_tipo_factura = '" + id + "'";
 
             _BD.Modificar(sqlUpdate);
         }

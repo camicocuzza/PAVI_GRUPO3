@@ -30,6 +30,7 @@ namespace CLASE05.Formularios.Rubros
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_id = new System.Windows.Forms.Label();
             this.txt_n_Rubro_viejo = new CLASE05.Clases.LabelText02();
             this.txt_n_Rubro_nuevo = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@ namespace CLASE05.Formularios.Rubros
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_id);
             this.panel1.Controls.Add(this.txt_n_Rubro_viejo);
             this.panel1.Controls.Add(this.txt_n_Rubro_nuevo);
             this.panel1.Controls.Add(this.btn_aceptar);
@@ -63,6 +65,16 @@ namespace CLASE05.Formularios.Rubros
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 288);
             this.panel1.TabIndex = 32;
+            // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(13, 134);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(35, 13);
+            this.lb_id.TabIndex = 24;
+            this.lb_id.Text = "label1";
+            this.lb_id.Visible = false;
             // 
             // txt_n_Rubro_viejo
             // 
@@ -152,6 +164,7 @@ namespace CLASE05.Formularios.Rubros
             this.Controls.SetChildIndex(this.lbl_titulo, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +177,6 @@ namespace CLASE05.Formularios.Rubros
         public Clases.LabelText02 txt_n_Rubro_nuevo;
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
+        public System.Windows.Forms.Label lb_id;
     }
 }

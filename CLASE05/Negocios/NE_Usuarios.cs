@@ -73,6 +73,30 @@ namespace CLASE05.Negocios
 
             return _BD.EjecutarSelect(sql);
         }
+
+        public DataTable Recuperar_x_Patron(string patron)
+        {
+            string sql = @"SELECT * "
+                     + " FROM usuario "
+                     + " WHERE n_usuario like '%" + patron.Trim() + "%'";
+
+            return _BD.EjecutarSelect(sql);
+
+        }
+
+        public DataTable Recuperar_x_Id(string id)
+        {
+            string sql = @"SELECT * FROM usuario WHERE id_usuario = " + id;
+            return _BD.EjecutarSelect(sql);
+        }
+
+
+        public DataTable Recuperar_Todos()
+        {
+            string sql = @"SELECT * FROM usuario";
+            return _BD.EjecutarSelect(sql);
+        }
+
         public void Insertar()
         {
             string sqlInsert = "";

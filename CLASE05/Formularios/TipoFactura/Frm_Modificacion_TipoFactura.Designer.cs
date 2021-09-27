@@ -34,6 +34,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.txt_n_TipoFactura_nuevo = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@ namespace CLASE05.Formularios.TipoFactura
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_id);
             this.panel1.Controls.Add(this.txt_n_TipoFactura_viejo);
             this.panel1.Controls.Add(this.txt_n_TipoFactura_nuevo);
             this.panel1.Controls.Add(this.btn_aceptar);
@@ -134,6 +136,16 @@ namespace CLASE05.Formularios.TipoFactura
             this.lbl_titulo.TabIndex = 29;
             this.lbl_titulo.Text = "Actualizar Tipos de Facturas";
             // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(3, 135);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(35, 13);
+            this.lb_id.TabIndex = 24;
+            this.lb_id.Text = "label1";
+            this.lb_id.Visible = false;
+            // 
             // Frm_Modificacion_TipoFactura
             // 
             this._PosiciónVisible = true;
@@ -153,6 +165,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.Controls.SetChildIndex(this.lbl_titulo, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +178,6 @@ namespace CLASE05.Formularios.TipoFactura
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
         public Clases.LabelText02 txt_n_TipoFactura_viejo;
+        public System.Windows.Forms.Label lb_id;
     }
 }

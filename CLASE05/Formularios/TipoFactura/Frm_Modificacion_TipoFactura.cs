@@ -11,6 +11,7 @@ using CLASE05.Clases;
 using CLASE05.Negocios;
 
 
+
 namespace CLASE05.Formularios.TipoFactura
 {
     public partial class Frm_Modificacion_TipoFactura : CLASE05.Formularios.FrmBASE.FrmBase
@@ -23,7 +24,7 @@ namespace CLASE05.Formularios.TipoFactura
         private void Frm_Modificacion_TipoFactura_Load(object sender, EventArgs e)
         {
             NE_TipoFactura usu = new NE_TipoFactura();
-            CargarFormulario(usu.RecuperarTipoFactura(id_tipo_factura));
+            CargarFormulario(usu.RecuperarTipoFactura(lb_id.Text));
         }
 
         private void CargarFormulario(DataTable tabla)
@@ -51,7 +52,7 @@ namespace CLASE05.Formularios.TipoFactura
 
                 usu.nombre = txt_n_TipoFactura_nuevo._Text;
 
-                usu.Modificar();
+                usu.Modificar(int.Parse(lb_id.Text));
                 MessageBox.Show("Se modificó correctamente el Tipo de Factura a:" + txt_n_TipoFactura_nuevo._Text, "Importante");
 
             }

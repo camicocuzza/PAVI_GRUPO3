@@ -86,6 +86,7 @@ namespace CLASE05.Formularios.TipoFactura
             
             Frm_Modificacion_TipoFactura frm_modificacion = new Frm_Modificacion_TipoFactura();
             frm_modificacion.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
+            frm_modificacion.lb_id.Text = frm_modificacion.id_tipo_factura;
             frm_modificacion.ShowDialog();
         }
 

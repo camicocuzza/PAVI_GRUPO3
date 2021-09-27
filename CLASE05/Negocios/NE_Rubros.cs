@@ -114,13 +114,13 @@ namespace CLASE05.Negocios
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
         }
-        public void Modificar()
+        public void Modificar(int id)
         {
             string sqlUpdate = "";
 
             sqlUpdate = "UPDATE rubro SET ";
-            sqlUpdate += "nombre = '" + nombre + "'";
-            sqlUpdate += " WHERE id_rubro = " + id_rubro;
+            sqlUpdate += " nombre = '" + nombre + "'";
+            sqlUpdate += " WHERE id_rubro = '" + id + "'";
 
             _BD.Modificar(sqlUpdate);
         }

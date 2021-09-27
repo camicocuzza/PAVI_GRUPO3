@@ -102,6 +102,7 @@ namespace CLASE05.Formularios.Rubros
             }
             Frm_Modificacion_Rubro frm_modificacion = new Frm_Modificacion_Rubro();
             frm_modificacion.id_rubro = grid_Rubros.CurrentRow.Cells[0].Value.ToString();
+            frm_modificacion.lb_id.Text = frm_modificacion.id_rubro;
             frm_modificacion.ShowDialog();
         }
 

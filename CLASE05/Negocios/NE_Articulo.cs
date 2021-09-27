@@ -18,7 +18,11 @@ namespace CLASE05.Negocios
         public string num_lote { get; set; }
         public string nombre { get; set; }
         public string cuit_proveedor { get; set; }
-
+        public string precio { get; set; }
+        public string tiempo_envio { get; set; }
+        public string plazo_pago { get; set; }
+        public string id_rubro { get; set; }
+        public string stock { get; set; }
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
         public Validacion Validar(string num_serie,string num_lote, string nombre,
@@ -28,7 +32,12 @@ namespace CLASE05.Negocios
                           WHERE num_serie = '" + num_serie + "'"
                          + " AND num_lote = '" + num_lote + "'"
                          + " AND nombre = '" + nombre + "'"
-                         + " AND cuit_proveedor = '" + cuit_proveedor + "'";
+                         + " AND cuit_proveedor = '" + cuit_proveedor + "'"
+                         + " AND precio = '" + precio + "'"
+                         + " AND tiempo_envio = '" + tiempo_envio + "'"
+                         + " AND plazo_pago = '" + plazo_pago + "'"
+                         + " AND id_rubro = '" + id_rubro + "'"
+                         + " AND stock = '" + stock + "'";
 
             DataTable tabla = new DataTable();
             tabla = _BD.EjecutarSelect(sql);
@@ -85,11 +94,16 @@ namespace CLASE05.Negocios
             string sqlInsert = "";
 
             sqlInsert = @"INSERT INTO articulo (num_serie, num_lote, 
-                        nombre, cuit_proveedor) VALUES (";
+                        nombre, cuit_proveedor,precio,tiempo_envio,plazo_pago,id_rubro,stock) VALUES (";
             sqlInsert += "'" + num_serie + "'";
-            sqlInsert += "'" + num_lote + "'";
-            sqlInsert += "'" + nombre + "'";
-            sqlInsert += ", '" + cuit_proveedor + "')";
+            sqlInsert += ", '" + num_lote + "'";
+            sqlInsert += ", '" + nombre + "'";
+            sqlInsert += ", '" + cuit_proveedor + "'";
+            sqlInsert += ", '" + precio + "'";
+            sqlInsert += ", '" + tiempo_envio + "'";
+            sqlInsert += ", '" + plazo_pago + "'";
+            sqlInsert += ", '" + id_rubro + "'";
+            sqlInsert += ", '" + stock + "')";
 
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
@@ -103,6 +117,11 @@ namespace CLASE05.Negocios
             sqlUpdate += ", num_lote = '" + num_lote + "'";
             sqlUpdate += ", nombre = '" + nombre + "'";
             sqlUpdate += " WHERE cuit_proveedor = " + cuit_proveedor;
+            sqlUpdate += ", precio = '" + precio + "'";
+            sqlUpdate += ", tiempo_envio = '" + tiempo_envio + "'";
+            sqlUpdate += ", plazo_pago = '" + plazo_pago + "'";
+            sqlUpdate += ", id_rubro = '" + id_rubro + "'";
+            sqlUpdate += ", stock = '" + stock + "'";
 
             _BD.Modificar(sqlUpdate);
         }

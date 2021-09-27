@@ -33,11 +33,11 @@ namespace CLASE05.Formularios.Articulo
         private void CargarFormulario(DataTable tabla)
         {
             txt_codigo._Text = tabla.Rows[0]["cod_articulo"].ToString();
-            txt_nro_lote._Text = tabla.Rows[0]["num_lote"].ToString();
             txt_nro_serie._Text = tabla.Rows[0]["num_serie"].ToString();
             txt_nro_lote._Text = tabla.Rows[0]["num_lote"].ToString();
             txt_nombre._Text = tabla.Rows[0]["nombre"].ToString();
             txt_cuit_proveedor._Text = tabla.Rows[0]["cuit_proveedor"].ToString();
+            txt_precio._Text = tabla.Rows[0]["precio"].ToString(); 
             txt_tiempo_envio._Text = tabla.Rows[0]["tiempo_envio"].ToString();
             txt_plazo_pago._Text = tabla.Rows[0]["plazo_pago"].ToString();
             txt_id_rubro._Text = tabla.Rows[0]["id_rubro"].ToString();

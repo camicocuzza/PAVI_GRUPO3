@@ -30,6 +30,7 @@ namespace CLASE05.Formularios.Articulo
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_stock = new CLASE05.Clases.LabelText02();
             this.txt_plazo_pago = new CLASE05.Clases.LabelText02();
             this.txt_id_rubro = new CLASE05.Clases.LabelText02();
             this.txt_cuit_proveedor = new CLASE05.Clases.LabelText02();
@@ -41,7 +42,6 @@ namespace CLASE05.Formularios.Articulo
             this.txt_nro_serie = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.txt_stock = new CLASE05.Clases.LabelText02();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,12 +80,36 @@ namespace CLASE05.Formularios.Articulo
             this.panel1.Size = new System.Drawing.Size(410, 445);
             this.panel1.TabIndex = 29;
             // 
+            // txt_stock
+            // 
+            this.txt_stock._Ancho = 4;
+            this.txt_stock._Decimales = 0;
+            this.txt_stock._Etiqueta = "Stock";
+            this.txt_stock._Mask = "9999";
+            this.txt_stock._MensajeError = null;
+            this.txt_stock._Nombre_campo = "id_usuario";
+            this.txt_stock._Nombre_tabla = null;
+            this.txt_stock._ReadOnly = false;
+            this.txt_stock._Text = "";
+            this.txt_stock._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_stock._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.txt_stock._Validable = false;
+            this.txt_stock.BackColor = System.Drawing.Color.Transparent;
+            this.txt_stock.Enabled = false;
+            this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_stock.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_stock.Location = new System.Drawing.Point(0, 340);
+            this.txt_stock.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_stock.Name = "txt_stock";
+            this.txt_stock.Size = new System.Drawing.Size(284, 28);
+            this.txt_stock.TabIndex = 30;
+            // 
             // txt_plazo_pago
             // 
-            this.txt_plazo_pago._Ancho = 2;
+            this.txt_plazo_pago._Ancho = 10;
             this.txt_plazo_pago._Decimales = 0;
             this.txt_plazo_pago._Etiqueta = "Plazo de Pago";
-            this.txt_plazo_pago._Mask = "99";
+            this.txt_plazo_pago._Mask = "9999999999";
             this.txt_plazo_pago._MensajeError = null;
             this.txt_plazo_pago._Nombre_campo = "id_usuario";
             this.txt_plazo_pago._Nombre_tabla = null;
@@ -130,17 +154,17 @@ namespace CLASE05.Formularios.Articulo
             // 
             // txt_cuit_proveedor
             // 
-            this.txt_cuit_proveedor._Ancho = 2;
-            this.txt_cuit_proveedor._Decimales = 0;
+            this.txt_cuit_proveedor._Ancho = 11;
+            this.txt_cuit_proveedor._Decimales = 2;
             this.txt_cuit_proveedor._Etiqueta = "Cuit Proveedor";
-            this.txt_cuit_proveedor._Mask = "99";
+            this.txt_cuit_proveedor._Mask = "99-99999999-9";
             this.txt_cuit_proveedor._MensajeError = null;
             this.txt_cuit_proveedor._Nombre_campo = "id_usuario";
             this.txt_cuit_proveedor._Nombre_tabla = null;
             this.txt_cuit_proveedor._ReadOnly = false;
-            this.txt_cuit_proveedor._Text = "";
+            this.txt_cuit_proveedor._Text = "  -        -";
             this.txt_cuit_proveedor._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_cuit_proveedor._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.txt_cuit_proveedor._TipoDato = CLASE05.Clases.LabelText02.TipoDato.mascaraEditada;
             this.txt_cuit_proveedor._Validable = false;
             this.txt_cuit_proveedor.BackColor = System.Drawing.Color.Transparent;
             this.txt_cuit_proveedor.Enabled = false;
@@ -154,17 +178,17 @@ namespace CLASE05.Formularios.Articulo
             // 
             // txt_nombre
             // 
-            this.txt_nombre._Ancho = 2;
+            this.txt_nombre._Ancho = 20;
             this.txt_nombre._Decimales = 0;
             this.txt_nombre._Etiqueta = "Nombre";
-            this.txt_nombre._Mask = "99";
+            this.txt_nombre._Mask = "CCCCCCCCCCCCCCCCCCCC";
             this.txt_nombre._MensajeError = null;
             this.txt_nombre._Nombre_campo = "id_usuario";
             this.txt_nombre._Nombre_tabla = null;
             this.txt_nombre._ReadOnly = false;
             this.txt_nombre._Text = "";
             this.txt_nombre._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_nombre._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
+            this.txt_nombre._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
             this.txt_nombre._Validable = false;
             this.txt_nombre.BackColor = System.Drawing.Color.Transparent;
             this.txt_nombre.Enabled = false;
@@ -173,15 +197,15 @@ namespace CLASE05.Formularios.Articulo
             this.txt_nombre.Location = new System.Drawing.Point(0, 123);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(284, 28);
+            this.txt_nombre.Size = new System.Drawing.Size(383, 28);
             this.txt_nombre.TabIndex = 25;
             // 
             // txt_tiempo_envio
             // 
-            this.txt_tiempo_envio._Ancho = 2;
+            this.txt_tiempo_envio._Ancho = 5;
             this.txt_tiempo_envio._Decimales = 0;
             this.txt_tiempo_envio._Etiqueta = "Tiempo de Envio";
-            this.txt_tiempo_envio._Mask = "99";
+            this.txt_tiempo_envio._Mask = "99999";
             this.txt_tiempo_envio._MensajeError = null;
             this.txt_tiempo_envio._Nombre_campo = "id_usuario";
             this.txt_tiempo_envio._Nombre_tabla = null;
@@ -226,17 +250,17 @@ namespace CLASE05.Formularios.Articulo
             // 
             // txt_precio
             // 
-            this.txt_precio._Ancho = 10;
+            this.txt_precio._Ancho = 8;
             this.txt_precio._Decimales = 2;
             this.txt_precio._Etiqueta = "Precio";
-            this.txt_precio._Mask = "CCCCCCCCCC";
+            this.txt_precio._Mask = "99999.99";
             this.txt_precio._MensajeError = "El password esta vácio";
             this.txt_precio._Nombre_campo = null;
             this.txt_precio._Nombre_tabla = null;
             this.txt_precio._ReadOnly = false;
-            this.txt_precio._Text = "";
+            this.txt_precio._Text = "     .";
             this.txt_precio._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_precio._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_precio._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
             this.txt_precio._Validable = true;
             this.txt_precio.BackColor = System.Drawing.Color.Transparent;
             this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,10 +273,10 @@ namespace CLASE05.Formularios.Articulo
             // 
             // txt_nro_lote
             // 
-            this.txt_nro_lote._Ancho = 2;
+            this.txt_nro_lote._Ancho = 10;
             this.txt_nro_lote._Decimales = 0;
             this.txt_nro_lote._Etiqueta = "Nro Lote";
-            this.txt_nro_lote._Mask = "99";
+            this.txt_nro_lote._Mask = "9999999999";
             this.txt_nro_lote._MensajeError = null;
             this.txt_nro_lote._Nombre_campo = "id_usuario";
             this.txt_nro_lote._Nombre_tabla = null;
@@ -273,17 +297,17 @@ namespace CLASE05.Formularios.Articulo
             // 
             // txt_nro_serie
             // 
-            this.txt_nro_serie._Ancho = 30;
+            this.txt_nro_serie._Ancho = 10;
             this.txt_nro_serie._Decimales = 2;
             this.txt_nro_serie._Etiqueta = "Nro Serie";
-            this.txt_nro_serie._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.txt_nro_serie._Mask = "9999999.99";
             this.txt_nro_serie._MensajeError = "El nombre del usuario está vácio";
             this.txt_nro_serie._Nombre_campo = "n_usuario";
             this.txt_nro_serie._Nombre_tabla = null;
             this.txt_nro_serie._ReadOnly = false;
-            this.txt_nro_serie._Text = "";
+            this.txt_nro_serie._Text = "       .";
             this.txt_nro_serie._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_nro_serie._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_nro_serie._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
             this.txt_nro_serie._Validable = true;
             this.txt_nro_serie.BackColor = System.Drawing.Color.Transparent;
             this.txt_nro_serie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -317,30 +341,6 @@ namespace CLASE05.Formularios.Articulo
             this.lbl_titulo.Size = new System.Drawing.Size(221, 31);
             this.lbl_titulo.TabIndex = 30;
             this.lbl_titulo.Text = "Consultar Articulo";
-            // 
-            // txt_stock
-            // 
-            this.txt_stock._Ancho = 2;
-            this.txt_stock._Decimales = 0;
-            this.txt_stock._Etiqueta = "Stock";
-            this.txt_stock._Mask = "99";
-            this.txt_stock._MensajeError = null;
-            this.txt_stock._Nombre_campo = "id_usuario";
-            this.txt_stock._Nombre_tabla = null;
-            this.txt_stock._ReadOnly = false;
-            this.txt_stock._Text = "";
-            this.txt_stock._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_stock._TipoDato = CLASE05.Clases.LabelText02.TipoDato.numero;
-            this.txt_stock._Validable = false;
-            this.txt_stock.BackColor = System.Drawing.Color.Transparent;
-            this.txt_stock.Enabled = false;
-            this.txt_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_stock.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_stock.Location = new System.Drawing.Point(0, 340);
-            this.txt_stock.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_stock.Name = "txt_stock";
-            this.txt_stock.Size = new System.Drawing.Size(284, 28);
-            this.txt_stock.TabIndex = 30;
             // 
             // Frm_Consulta_Articulo
             // 

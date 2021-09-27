@@ -29,9 +29,9 @@ namespace CLASE05.Clases
                 string[] datos = datos_columna[i].Split(',');
                 this.Columns.Add("columna" + i.ToString(), datos[0].ToString());
                 this.Columns[i].Width = int.Parse(datos[1].ToString());
-                if (datos.Length == 3)
+                if (datos.Length == 7)
                 {
-                    switch (datos[2].Trim())
+                    switch (datos[6].Trim())
                     {
                         case "I":
                             this.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;

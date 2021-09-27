@@ -36,11 +36,12 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoDocumentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficosEstadísticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.salirToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -88,7 +89,7 @@
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.salirDeSistemaConLoginActivoToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Name = "salirDeSistemaConLoginActivoToolStripMenuItem";
-            this.salirDeSistemaConLoginActivoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.salirDeSistemaConLoginActivoToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Text = "Cerrar sesión";
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Click += new System.EventHandler(this.salirDeSistemaConLoginActivoToolStripMenuItem_Click);
             // 
@@ -105,7 +106,8 @@
             // 
             this.aBMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosToolStripMenuItem,
-            this.empleadoToolStripMenuItem});
+            this.empleadoToolStripMenuItem,
+            this.tipoDocumentoToolStripMenuItem});
             this.aBMToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.aBMToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
             this.aBMToolStripMenuItem.Name = "aBMToolStripMenuItem";
@@ -118,6 +120,20 @@
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // empleadoToolStripMenuItem
+            // 
+            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.empleadoToolStripMenuItem.Text = "Empleado";
+            this.empleadoToolStripMenuItem.Click += new System.EventHandler(this.empleadoToolStripMenuItem_Click);
+            // 
+            // tipoDocumentoToolStripMenuItem
+            // 
+            this.tipoDocumentoToolStripMenuItem.Name = "tipoDocumentoToolStripMenuItem";
+            this.tipoDocumentoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.tipoDocumentoToolStripMenuItem.Text = "Cliente";
+            this.tipoDocumentoToolStripMenuItem.Click += new System.EventHandler(this.tipoDocumentoToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -150,12 +166,6 @@
             this.aToolStripMenuItem2.Name = "aToolStripMenuItem2";
             this.aToolStripMenuItem2.Size = new System.Drawing.Size(86, 24);
             this.aToolStripMenuItem2.Text = "a";
-            // 
-            // empleadoToolStripMenuItem
-            // 
-            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.empleadoToolStripMenuItem.Text = "Empleado";
             // 
             // Frm_Escritorio
             // 
@@ -196,6 +206,7 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoDocumentoToolStripMenuItem;
     }
 }
 

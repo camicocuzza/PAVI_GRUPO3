@@ -11,14 +11,15 @@ namespace CLASE05.Clases
 {
     class BE_Acceso_Datos
     {
+        
+        public enum RecuperacionPk { recuperar, no_recuperar }
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
 
-       
-        //string cadena_conexion = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K7G15_2021; User ID = BD3K7G15_2021; Password=BDG15_3922";
+        public RecuperacionPk _RecuperarId { get; set; } = RecuperacionPk.no_recuperar;
         string cadena_conexion = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K3G03_2021; User ID = BD3K3G03_2021; Password=BDG03_3355";
-                                  
-        
+        //string cadena_conexion = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K7G15_2021; User ID = BD3K7G15_2021; Password=BDG15_3922";                          
+
         private void Conectar()
         {
             Conexion.ConnectionString = cadena_conexion;
@@ -34,13 +35,13 @@ namespace CLASE05.Clases
         {
             Conectar();
             Cmd.CommandText = sql;
-            DataTable tabla = new DataTable();
+            DataTable tabla = new DataTable(); 
             tabla.Load(Cmd.ExecuteReader());
             Cerrar();
             return tabla;
         }
 
-        public void EjecutarNoSelect(string sql)
+        private void EjecutarNoSelect(string sql)
         {
             Conectar();
             Cmd.CommandText = sql;
@@ -50,7 +51,7 @@ namespace CLASE05.Clases
 
         public void Insertar(string sql)
         {
-            EjecutarNoSelect(sql);
+           EjecutarNoSelect(sql);
         }
 
         public void Borrar(string sql)
@@ -61,6 +62,7 @@ namespace CLASE05.Clases
         public void Modificar(string sql)
         {
             EjecutarNoSelect(sql);
+            
         }
     }
 }

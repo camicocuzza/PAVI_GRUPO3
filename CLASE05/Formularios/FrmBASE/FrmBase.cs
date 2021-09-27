@@ -31,6 +31,8 @@ namespace CLASE05.Formularios.FrmBASE
         {
             set { btn_maximizar.Visible = value; }
         }
+        public string cuit_cliente { get; set; }
+
         public FrmBase()
         {
             InitializeComponent();

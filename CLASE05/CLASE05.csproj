@@ -105,29 +105,47 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Cliente\Frm_Validar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cliente\Frm_Validar_Cliente.Designer.cs">
+      <DependentUpon>Frm_Validar_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Empleado\Frm_ABM_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Empleado\Frm_ABM_Empleado.Designer.cs">
       <DependentUpon>Frm_ABM_Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Alta_Empleado.cs">
+    <Compile Include="Formularios\Empleado\Frm_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Alta_Empleado.Designer.cs">
-      <DependentUpon>Frm_Alta_Empleado.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\Frm_Empleado.Designer.cs">
+      <DependentUpon>Frm_Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Baja_Empleado.cs">
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Alta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Baja_Empleado.Designer.cs">
-      <DependentUpon>Frm_Baja_Empleado.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Alta.Designer.cs">
+      <DependentUpon>Frm_Empleado_Alta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Modicar_Empleado.cs">
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Baja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Modicar_Empleado.Designer.cs">
-      <DependentUpon>Frm_Modicar_Empleado.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Baja.Designer.cs">
+      <DependentUpon>Frm_Empleado_Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Consulta.Designer.cs">
+      <DependentUpon>Frm_Empleado_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\Frm_Empleado_Modificar.Designer.cs">
+      <DependentUpon>Frm_Empleado_Modificar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
@@ -140,12 +158,6 @@
     </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase_ABM_Entrada.Designer.cs">
       <DependentUpon>FrmBase_ABM_Entrada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Consultar_Empleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Empleado\Frm_Consultar_Empleado.Designer.cs">
-      <DependentUpon>Frm_Consultar_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\InicioSistema\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -165,35 +177,29 @@
     <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.cs">
+    <Compile Include="Formularios\Cliente\frm_ABM_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.Designer.cs">
-      <DependentUpon>frm_ABM_tipoDocumento.cs</DependentUpon>
+    <Compile Include="Formularios\Cliente\frm_ABM_Cliente.Designer.cs">
+      <DependentUpon>frm_ABM_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.cs">
+    <Compile Include="Formularios\Cliente\Frm_Alta_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.Designer.cs">
-      <DependentUpon>Frm_Alta_tipoDocumento.cs</DependentUpon>
+    <Compile Include="Formularios\Cliente\Frm_Alta_Cliente.Designer.cs">
+      <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.cs">
+    <Compile Include="Formularios\Cliente\Frm_Baja_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.Designer.cs">
-      <DependentUpon>Frm_Baja_tipoDocumento.cs</DependentUpon>
+    <Compile Include="Formularios\Cliente\Frm_Baja_Cliente.Designer.cs">
+      <DependentUpon>Frm_Baja_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.cs">
+    <Compile Include="Formularios\Cliente\Frm_Modificar_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.Designer.cs">
-      <DependentUpon>Frm_Consulta_tipoDocumento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.Designer.cs">
-      <DependentUpon>Frm_Modificar_tipoDocumento.cs</DependentUpon>
+    <Compile Include="Formularios\Cliente\Frm_Modificar_Cliente.Designer.cs">
+      <DependentUpon>Frm_Modificar_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
@@ -231,6 +237,8 @@
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificacion.Designer.cs">
       <DependentUpon>Frm_Usuario_Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NE_Cliente.cs" />
+    <Compile Include="Negocios\NE_Empleado.cs" />
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,20 +254,23 @@
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cliente\Frm_Validar_Cliente.resx">
+      <DependentUpon>Frm_Validar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Empleado\Frm_ABM_Empleado.resx">
       <DependentUpon>Frm_ABM_Empleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleado\Frm_Alta_Empleado.resx">
-      <DependentUpon>Frm_Alta_Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Empleado_Alta.resx">
+      <DependentUpon>Frm_Empleado_Alta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleado\Frm_Baja_Empleado.resx">
-      <DependentUpon>Frm_Baja_Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Empleado_Baja.resx">
+      <DependentUpon>Frm_Empleado_Baja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleado\Frm_Consultar_Empleado.resx">
-      <DependentUpon>Frm_Consultar_Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Empleado_Consulta.resx">
+      <DependentUpon>Frm_Empleado_Consulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleado\Frm_Modicar_Empleado.resx">
-      <DependentUpon>Frm_Modicar_Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\Frm_Empleado_Modificar.resx">
+      <DependentUpon>Frm_Empleado_Modificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
@@ -276,20 +287,17 @@
     <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\TipoDocumento\frm_ABM_tipoDocumento.resx">
-      <DependentUpon>frm_ABM_tipoDocumento.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Cliente\frm_ABM_Cliente.resx">
+      <DependentUpon>frm_ABM_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Alta_tipoDocumento.resx">
-      <DependentUpon>Frm_Alta_tipoDocumento.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Cliente\Frm_Alta_Cliente.resx">
+      <DependentUpon>Frm_Alta_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Baja_tipoDocumento.resx">
-      <DependentUpon>Frm_Baja_tipoDocumento.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Cliente\Frm_Baja_Cliente.resx">
+      <DependentUpon>Frm_Baja_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Consulta_tipoDocumento.resx">
-      <DependentUpon>Frm_Consulta_tipoDocumento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\TipoDocumento\Frm_Modificar_tipoDocumento.resx">
-      <DependentUpon>Frm_Modificar_tipoDocumento.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Cliente\Frm_Modificar_Cliente.resx">
+      <DependentUpon>Frm_Modificar_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>

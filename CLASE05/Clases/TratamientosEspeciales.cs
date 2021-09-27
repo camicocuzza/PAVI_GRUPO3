@@ -5,9 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
-
-
-
+using System.Data;
 
 namespace CLASE05.Clases
 {
@@ -74,6 +72,13 @@ namespace CLASE05.Clases
                 return RespuestaValidacion.Error;
             }
         }
+        public string RecuperarFecha()
+        {
+            BE_Acceso_Datos _BD = new BE_Acceso_Datos();
+            return _BD.EjecutarSelect("select convert(char(10),getdate(),103)").Rows[0][0].ToString();
+        }
+        
+        
 
     }
 }

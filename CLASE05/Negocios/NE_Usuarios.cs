@@ -84,6 +84,11 @@ namespace CLASE05.Negocios
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
         }
+        //public string Insertar(Control.ControlCollection Controles)
+        //{
+        //    TratamientosEspeciales _TE = new TratamientosEspeciales();
+        //    return _BD.Insertar(_TE.SqlInsertAutomatico("usuario", Controles), BE_Acceso_Datos.RecuperacionPk.recuperar);
+        //}
         public void Modificar()
         {
             string sqlUpdate = "";

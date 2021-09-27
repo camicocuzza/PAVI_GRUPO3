@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using CLASE05.Formularios.InicioSistema;
 using CLASE05.Formularios.FrmBASE;
 using CLASE05.Formularios.Usuarios;
+using CLASE05.Formularios.Empleado;
+using CLASE05.Formularios.TipoDocumento;
 
 namespace CLASE05
 {
@@ -24,8 +26,8 @@ namespace CLASE05
             //Application.Run(new FrmLogin());
             //Application.Run(new Frm_ABM_Usuario_Entrada());
             //Application.Run(new Frm_Usuario_Alta());
-            //Application.Run(new Frm_Log());
-
+            //Application.Run(new Frm_ABM_Empleado());
+            //Application.Run(new frm_ABM_tipoDocumento());
 
         }
     }

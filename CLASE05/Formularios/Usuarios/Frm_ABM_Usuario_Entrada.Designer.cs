@@ -180,6 +180,7 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_id_usuario.Name = "txt_id_usuario";
             this.txt_id_usuario.Size = new System.Drawing.Size(48, 25);
             this.txt_id_usuario.TabIndex = 17;
+            this.txt_id_usuario.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txt_id_usuario_MaskInputRejected);
             this.txt_id_usuario.Click += new System.EventHandler(this.txt_id_usuario_Click);
             this.txt_id_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_patron_KeyPress);
             // 
@@ -204,6 +205,7 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_patron.Name = "txt_patron";
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 11;
+            this.txt_patron.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txt_patron_MaskInputRejected);
             this.txt_patron.Click += new System.EventHandler(this.txt_patron_Click);
             this.txt_patron.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_patron_KeyPress);
             // 

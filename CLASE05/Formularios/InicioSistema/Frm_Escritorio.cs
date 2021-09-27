@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CLASE05.Negocios;
 using CLASE05.Formularios.Usuarios;
+using CLASE05.Formularios.Empleado;
+using CLASE05.Formularios.TipoDocumento;
 using CLASE05.Formularios.FrmBASE;
 
 namespace CLASE05.Formularios.InicioSistema
@@ -65,6 +67,18 @@ namespace CLASE05.Formularios.InicioSistema
         {
             Frm_ABM_Usuario_Entrada frm_usuario = new Frm_ABM_Usuario_Entrada();
             frm_usuario.ShowDialog();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Empleado frm_empleado = new Frm_ABM_Empleado();
+            frm_empleado.ShowDialog();
+        }
+
+        private void tipoDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ABM_tipoDocumento frm_tipoDocu = new frm_ABM_tipoDocumento();
+            frm_tipoDocu.ShowDialog();
         }
     }
 }

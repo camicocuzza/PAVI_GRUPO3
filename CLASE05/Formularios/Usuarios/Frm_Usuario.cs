@@ -28,5 +28,10 @@ namespace CLASE05.Formularios.Usuarios
         //    cmb_estadosUsuarios._Cargar();
         //    cmb_perfiles._Cargar();
         }
+
+        private void Frm_Usuario_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

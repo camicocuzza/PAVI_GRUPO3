@@ -10,9 +10,15 @@ using System.Windows.Forms;
 
 namespace CLASE05.Formularios.Empleado
 {
-    public partial class Frm_Alta_Empleado : CLASE05.Formularios.FrmBASE.FrmBase
+    public partial class Frm_Empleado : CLASE05.Formularios.FrmBASE.FrmBase
     {
-        public Frm_Alta_Empleado()
+        public string _Titulo
+        {
+            get { return lbl_posicion.Text; }
+            set { lbl_posicion.Text = value; }
+        }
+        public string legajo_empleado { get; set; }
+        public Frm_Empleado()
         {
             InitializeComponent();
         }

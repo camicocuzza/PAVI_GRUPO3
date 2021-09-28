@@ -113,15 +113,16 @@ namespace CLASE05.Negocios
             string sqlUpdate = "";
 
             sqlUpdate = "UPDATE articulo SET ";
-            sqlUpdate += ", num_serie = '" + num_serie + "'";
+            sqlUpdate += "num_serie = '" + num_serie + "'";
             sqlUpdate += ", num_lote = '" + num_lote + "'";
             sqlUpdate += ", nombre = '" + nombre + "'";
-            sqlUpdate += " WHERE cuit_proveedor = " + cuit_proveedor;
+            sqlUpdate += ", cuit_proveedor = '" + cuit_proveedor + "'";
             sqlUpdate += ", precio = '" + precio + "'";
             sqlUpdate += ", tiempo_envio = '" + tiempo_envio + "'";
             sqlUpdate += ", plazo_pago = '" + plazo_pago + "'";
-            sqlUpdate += ", id_rubro = '" + id_rubro + "'";
+            sqlUpdate += ", id_rubro = " + id_rubro  ;
             sqlUpdate += ", stock = '" + stock + "'";
+            sqlUpdate += " WHERE cod_articulo = '" + cod_articulo + "'";
 
             _BD.Modificar(sqlUpdate);
         }

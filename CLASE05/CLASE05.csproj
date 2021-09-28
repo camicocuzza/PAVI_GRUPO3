@@ -261,6 +261,30 @@
     <Compile Include="Formularios\Stock\Frm_ABM_Stock.Designer.cs">
       <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Stock\Frm_Alta_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Alta_Stock.Designer.cs">
+      <DependentUpon>Frm_Alta_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Baja_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Baja_Stock.Designer.cs">
+      <DependentUpon>Frm_Baja_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Consulta_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Consulta_Stock.Designer.cs">
+      <DependentUpon>Frm_Consulta_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Modificar_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Stock\Frm_Modificar_Stock.Designer.cs">
+      <DependentUpon>Frm_Modificar_Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +323,7 @@
     </Compile>
     <Compile Include="Negocios\NE_Articulo.cs" />
     <Compile Include="Negocios\NE_Lotes.cs" />
+    <Compile Include="Negocios\NE_Stock.cs" />
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -388,6 +413,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Proveedor\Frm_Modificar_Proveedor.resx">
       <DependentUpon>Frm_Modificar_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Stock\Frm_ABM_Stock.resx">
+      <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Stock\Frm_Alta_Stock.resx">
+      <DependentUpon>Frm_Alta_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Stock\Frm_Baja_Stock.resx">
+      <DependentUpon>Frm_Baja_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Stock\Frm_Consulta_Stock.resx">
+      <DependentUpon>Frm_Consulta_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Stock\Frm_Modificar_Stock.resx">
+      <DependentUpon>Frm_Modificar_Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>

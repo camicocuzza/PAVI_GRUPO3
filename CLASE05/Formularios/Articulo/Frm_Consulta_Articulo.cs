@@ -43,5 +43,10 @@ namespace CLASE05.Formularios.Articulo
             txt_id_rubro._Text = tabla.Rows[0]["id_rubro"].ToString();
             txt_stock._Text = tabla.Rows[0]["stock"].ToString();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
